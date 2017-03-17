@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .container {
 	background-color: #FFFFFF;
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	border-bottom-width: 0px;
@@ -195,7 +195,7 @@
 	text-align: center;
 }
 .right_half {
-	background-color: #01B2D1;
+	background-color: #52BAD5;
 	color: #FFFFFF;
 	font-family: "Source Sans Pro";
 	text-align: center;
