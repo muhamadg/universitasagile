@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+
 #primary_nav_wrap
 {
 	
@@ -16,16 +16,16 @@
 	position:relative;
 	float:left;
 	margin:0;
-	padding:0
+	padding:0;
+	z-index:1000;
 }
 
 #primary_nav_wrap ul a
 {
 	display:block;
-	color:#000000;
+	color:#FFFFFF;
 	text-decoration:none;
-	font-weight:700;
-	
+	font-weight:700;	
 	line-height:32px;
 	padding:0 15px;
 	font-family:"Source Sans Pro"
@@ -46,7 +46,7 @@
 
 #primary_nav_wrap ul li:hover
 {
-	background:#f6f6f6;	
+	background:#81AAEB;	
 }
 
 #primary_nav_wrap ul ul
@@ -62,6 +62,7 @@
 #primary_nav_wrap ul ul li
 {
 	float:none;
+	background:#3c8dbc;
 	width:200px
 }
 
