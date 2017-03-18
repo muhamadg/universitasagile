@@ -3,7 +3,21 @@
 <title>UNIVERSITAS AGILE</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/nav.css" rel="stylesheet" type="text/css">
+<link href="css/slide.css" rel="stylesheet" type="text/css">
 </head>
+<div id="openModal" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>Login</h2>
+			<form action="administrator/index.html">
+				<label for="fname">Username</label>
+				<input type="text" placeholder="Your username..">
+				<label for="lname">Password</label>
+				<input type="text" placeholder="Your password..">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+</div> 
 <body>
 <div class="container">
   <header>    
@@ -12,8 +26,8 @@
     	<tr>
     		<td align="left">
     			<ul>
-				  <li><a href="#">Beranda</a></li>
-				  <li><a href="#">Tentang Agile</a></li>
+				  <li><a href="#">Serambi</a></li>
+				  <li><a href="about.html">Tentang Agile</a></li>
 				  <li><a href="#">Akademik</a>
 					<ul>
 					  <li><a href="#">Jadwal</a></li>
@@ -28,38 +42,32 @@
 						<li><a href="#">Staff</a></li>
 						<li><a href="#">Alumni</a></li>
 					</ul>
-				  </li>
-				  <li><a href="#">Administrator</a>
-					<ul>
-						<li><a href="#">Kelola Dosen</a></li>
-						<li><a href="#">Kelola Mahasiswa</a></li>
-						<li><a href="#">Kelola Mata Kuliah</a></li>
-						<li><a href="#">Kelola Layanan</a></li>
-					</ul>
-				  </li>		  		
+				  </li>				  				  		
 				</ul>
     		</td>    	
     		<td align="right">
-    			<ul>
-					<li><img src="images/indonesia.png" width=20px height=15px>Indonesia |</li>
-					<li>| <img src="images/english.png" width=20px height=15px>English</li>
-				</ul>
-    		</td>
+    			<a href="#" title="Indonesia"><img src="images/indonesia.png" width=20px height=15px></a>
+    			<a href="#" title="English"><img src="images/english.png" width=20px height=15px></a>
+    			<a href="#openModal" title="Login"><img src="images/logoagile.png" width=20px height=15px></a>   &nbsp;			
+    		</td>    		
     	</tr>
-    </table> 	
-	</nav>	
-    <div class="primary_header">
-      <h1 class="title"> AGILE UNIVERSITY</h1>
-    </div>
+    </table>    	
+	</nav>         
+      <div class="w3-content w3-display-container">
+		  <img class="mySlides" src="images/agileuniversity.png" style="width:100%"> 
+		  <img class="mySlides" src="images/agilebrain.png" style="width:100%"> 
+		  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>	    
   </header>
   <section>
     <h2 class="noDisplay">Main Content</h2>
     <article class="left_article">
-      <h3>Beranda</h3>
+      <h3>Serambi</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
     </article>
-    <aside class="right_article"><img src="images/placeholder.jpg" alt="" width="400" height="200" class="placeholder"/> </aside>
+    <aside class="right_article"><img src="images/placeholder.jpg" alt="" width="400" height="200" class="placeholder"/></aside>
   </section>
   
   <div class="social">
@@ -79,8 +87,8 @@
 			<p>Contact Us</p>
 			<p>Jl Agile University</p>
 			<p>Telp : 021-9586579</p>
-			<p>Email : universitasagile@uag.ac.id</p>
-			<p>http://www.universitasagile.tk</p>
+			<p>Email : agieluniversity@gmail.com</p>
+			<p>http://www.universityagile.tk</p>
 		</div>
 	</div>
   </div>
@@ -88,5 +96,38 @@
     <div class="copyright">UNIVERSITAS AGILE&copy;201<strong>7</strong></div>
   </footer>
 </div>
+<script language="javascript">
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+</script>
 </body>
 </html>
