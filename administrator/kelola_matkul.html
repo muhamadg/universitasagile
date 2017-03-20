@@ -3,30 +3,33 @@
 <title>UNIVERSITAS AGILE</title>
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 <link href="../css/nav.css" rel="stylesheet" type="text/css">
+<link href="../css/tab.css" rel="stylesheet" type="text/css">
 </head>
+<script language="JavaScript">
+   function konfirmasi(id)
+   {       
+       tanya = confirm('Anda yakin ingin menghapus data ini ?');
+       if (tanya == true) return ;       
+   }
+</script>
 <div id="tambahDosen" class="modalDialog">
 		<div>
 			<a href="#close" title="Close" class="close">X</a>
-			<h2>Tambah Data Mata Kuliah</h2>
+			<h2>Kelola Data Mata Kuliah</h2>
 			<form action="#">
-				<label for="fname">Jenis Layanan</label>
-				<select name="jenis_layanan" placeholder="Jenis Layanan ..">
-					<option>Foto</option>
-					<option>Video</option>
-					<option>Penelitian</option>
-				</select>				
+				<label for="fname">Kode Mata Kuliah</label>
+				<input type="text" placeholder="Kode Mata Kuliah..">
+				<label for="fname">Nama Mata Kuliah</label>
+				<input type="text" placeholder="Nama Mata Kuliah..">
+				<label for="fname">Jumlah SKS</label>
+				<input type="text" placeholder="Jumlah SKS..">				
 				<label for="fname">Deskripsi</label>
-				<input type="text" placeholder="Deskripsi..">
-				<label for="fname">Tanggal</label>
-				<input type="text" placeholder="Tanggal..">
+				<input type="text" placeholder="Deskripsi..">				
 				<label for="fname">Status</label>
 				<select name="status_layanan" placeholder="Status Layanan ..">
 					<option>Aktif</option>
-					<option>Tunda</option>
-					<option>Batal</option>
-				</select>				
-				<label for="fname">File</label>
-				<input type="file" placeholder="File..">
+					<option>Non Aktif</option>
+				</select>			
 				<input type="submit" value="Submit">
 			</form>
 		</div>
@@ -34,7 +37,7 @@
 <body>
 <div class="container">
   <header>    
-    <nav id="primary_nav_wrap">
+    <nav id="primary_nav_wrap">	
     <table width=100%>
     	<tr>
     		<td align="left">
@@ -65,71 +68,208 @@
   <section>
     <h2 class="noDisplay">Main Content</h2>
     <div class="secondary_content">
-      <h1 class="title"></h1>    
-      <h3>Kelola Mata Kuliah</h3>
-      <p>
-      	<a href="#tambahDosen"> Tambah </a>
-      </p>
-      <table class="nice-table" width="100%">
-      <thead
-      	<tr>
-      		<th>Kode Mata Kuliah</th>
-      		<th>Nama Mata Kuliah</th>
-      		<th>Text Book</th>
-      		<th>Status</th>
-      		<th>Proses</th>
-      	</tr>
-		</thead>
-     	<tbody>
-      	<tr>
-      		<td>Foto</td>
-      		<td>1606</td>
-      		<td>17 Januari 2017</td>
-      		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
-      	</tr>
-      	<tr>
-      		<td>Video</td>
-      		<td>1606</td>
-      		<td>27 Januari 2017</td>
-      		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
-      	</tr>
-      	<tr>
-      		<td>Foto</td>
-      		<td>1606</td>
-      		<td>28 Januari 2017</td>
-      		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
-      	</tr>
-      	<tr>
-      		<td>Foto</td>
-      		<td>1606</td>
-      		<td>30 Januari 2017</td>
-      		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
-      	</tr>
-      	<tr>
-      		<td>Penelitian</td>
-      		<td>1606</td>
-      		<td>5 Februari 2017</td>
-      		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
-      	</tr>
-      	<tr>
-      		<td>Video</td>
-      		<td>1606</td>
-      		<td>12 Februari 2017</td>
-      		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
-      	</tr>
-      	<tr align="right">
-      		<th colspan="5">Page 1 of 25 |< < > >|</th>      		
-      	</tr>
-      </table> 
+		<div class="w3-bar w3-blue">
+			<button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')">Mata Kuliah</button>
+			<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">Kelas</button>
+			<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')">Jadwal</button>
+		</div>
+		  <div id="London" class="w3-container w3-border city">
+			<h3>Kelola Mata Kuliah</h3>
+			  <p>
+				<a href="#tambahDosen"> Tambah </a>
+			  </p>
+			  <table class="nice-table" width="100%">
+			  <thead
+				<tr>
+					<th>Kode Mata Kuliah</th>
+					<th>Nama Mata Kuliah</th>
+					<th>Deskripsi</th>
+					<th>SKS</th>
+					<th>Status</th>
+					<th>Proses</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>CSIE802073</td>
+					<td>Analitika Media Sosial & Digital</td>
+					<td>-</td>
+					<td>3 SKS</td>
+					<td>Aktif</td>
+					<td align="center"><a href="#tambahDosen"> View </a> | <a href="#tambahDosen"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+				</tr>
+				<tr>
+					<td>CSIM801023</td>
+					<td>Dinamika Tim Perangkat Lunak</td>
+					<td>-</td>
+					<td>3 SKS</td>
+					<td>Aktif</td>
+					<td align="center"><a href="#tambahDosen"> View </a> | <a href="#tambahDosen"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+				</tr>
+				<tr>
+					<td>CSIM801021</td>
+					<td>Manajemen Perubahan & Proyek TI</td>
+					<td>-</td>
+					<td>3 SKS</td>
+					<td>Aktif</td>
+					<td align="center"><a href="#tambahDosen"> View </a> | <a href="#tambahDosen"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+				</tr>
+				<tr>
+					<td>CSIM801022</td>
+					<td>Manajemen Strategis SI</td>
+					<td>-</td>
+					<td>3 SKS</td>
+					<td>Aktif</td>
+					<td align="center"><a href="#tambahDosen"> View </a> | <a href="#tambahDosen"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+				</tr>
+				<tr>
+					<td>CSIM801031</td>
+					<td>Metodologi Penelitian & Penulisan Ilmiah</td>
+					<td>-</td>
+					<td>3 SKS</td>
+					<td>Aktif</td>
+					<td align="center"><a href="#tambahDosen"> View </a> | <a href="#tambahDosen"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+				</tr>				
+				<tr align="right">
+					<th colspan="5">Page 1 of 25 |< < > >|</th>      		
+				</tr>
+			  </table> 
 
-      </tbody>       
-      </div>    
+			  </tbody>
+		  </div>
+
+		  <div id="Paris" class="w3-container w3-border city" style="display:none">
+			<h3>Kelola Kelas</h3>
+			  <p>
+				<a href="#tambahDosen"> Tambah </a>
+			  </p>
+			  <table class="nice-table" width="100%">
+			  <thead
+				<tr>
+					<th>Kode Mata Kuliah</th>
+					<th>Nama Mata Kuliah</th>
+					<th>Text Book</th>
+					<th>Status</th>
+					<th>Proses</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Foto</td>
+					<td>1606</td>
+					<td>17 Januari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr>
+					<td>Video</td>
+					<td>1606</td>
+					<td>27 Januari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr>
+					<td>Foto</td>
+					<td>1606</td>
+					<td>28 Januari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr>
+					<td>Foto</td>
+					<td>1606</td>
+					<td>30 Januari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr>
+					<td>Penelitian</td>
+					<td>1606</td>
+					<td>5 Februari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr>
+					<td>Video</td>
+					<td>1606</td>
+					<td>12 Februari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr align="right">
+					<th colspan="5">Page 1 of 25 |< < > >|</th>      		
+				</tr>
+			  </table> 
+
+			  </tbody> 
+		  </div>
+
+		  <div id="Tokyo" class="w3-container w3-border city" style="display:none">
+			<h3>Kelola Jadwal</h3>
+			  <p>
+				<a href="#tambahDosen"> Tambah </a>
+			  </p>
+			  <table class="nice-table" width="100%">
+			  <thead
+				<tr>
+					<th>Kode Mata Kuliah</th>
+					<th>Nama Mata Kuliah</th>
+					<th>Text Book</th>
+					<th>Status</th>
+					<th>Proses</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Foto</td>
+					<td>1606</td>
+					<td>17 Januari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr>
+					<td>Video</td>
+					<td>1606</td>
+					<td>27 Januari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr>
+					<td>Foto</td>
+					<td>1606</td>
+					<td>28 Januari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr>
+					<td>Foto</td>
+					<td>1606</td>
+					<td>30 Januari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr>
+					<td>Penelitian</td>
+					<td>1606</td>
+					<td>5 Februari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr>
+					<td>Video</td>
+					<td>1606</td>
+					<td>12 Februari 2017</td>
+					<td>Aktif</td>
+					<td align="center">Edit | Delete</td>
+				</tr>
+				<tr align="right">
+					<th colspan="5">Page 1 of 25 |< < > >|</th>      		
+				</tr>
+			  </table> 
+
+			  </tbody>
+		  </div>
+    </div>    
   </section>
   
   <div class="social">
@@ -158,5 +298,20 @@
     <div class="copyright">UNIVERSITAS AGILE&copy;201<strong>7</strong></div>
   </footer>
 </div>
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
 </body>
 </html>
