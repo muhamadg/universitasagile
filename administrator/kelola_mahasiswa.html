@@ -7,22 +7,21 @@
 <div id="tambahDosen" class="modalDialog">
 		<div>
 			<a href="#close" title="Close" class="close">X</a>
-			<h2>Tambah Data Dosen</h2>
-			<form action="#">
-				<label for="fname">Gelar Depan</label>
-				<input type="text" placeholder="Your username..">
+			<h2>Tambah Data Mahasiswa</h2>
+			<form action="#">				
 				<label for="fname">Nama Depan</label>
 				<input type="text" placeholder="Your username..">
 				<label for="fname">Nama Belakang</label>
-				<input type="text" placeholder="Your username..">
-				<label for="fname">Gelar Belakang</label>
-				<input type="text" placeholder="Your username..">
-				<label for="lname">NID</label>
+				<input type="text" placeholder="Your username..">				
+				<label for="lname">NPM</label>
 				<input type="text" placeholder="Your password..">
-				<label for="fname">Pendidikan</label>
+				<label for="fname">Pendidikan Terakhir</label>
 				<input type="text" placeholder="Your username..">
-				<label for="fname">Pengalaman Mengajar</label>
-				<input type="text" placeholder="Your username..">
+				<select name="status_mahasiswa" placeholder="Status Mahasiswa ..">
+					<option>Aktif</option>
+					<option>Tunda</option>
+					<option>Batal</option>
+				</select>
 				<label for="fname">Foto</label>
 				<input type="file" placeholder="Your username..">
 				<input type="submit" value="Submit">
@@ -64,7 +63,7 @@
     <h2 class="noDisplay">Main Content</h2>
     <div class="secondary_content">
       <h1 class="title"></h1>    
-      <h3>Kelola Mahasiswa</h3>
+      <h3>Kelola Data Mahasiswa</h3>
       <p>
       	<a href="#tambahDosen"> Tambah </a>
       </p>
