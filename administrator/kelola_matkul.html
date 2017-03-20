@@ -34,6 +34,45 @@
 			</form>
 		</div>
 </div> 
+<div id="tambahkelas" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>Kelola Data Kelas</h2>
+			<form action="#">
+				<label for="fname">Kode Kelas</label>
+				<input type="text" placeholder="Kode Mata Kuliah..">
+				<label for="fname">Dosen PA</label>
+				<input type="text" placeholder="Dosen PA..">											
+				<label for="fname">Status</label>
+				<select name="status_layanan" placeholder="Status Layanan ..">
+					<option>Aktif</option>
+					<option>Non Aktif</option>
+				</select>
+				<label for="fname">Keterangan</label>
+				<input type="text" placeholder="Keterangan..">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+</div>
+<div id="tambahjadwal" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>Kelola Data Jadwal</h2>
+			<form action="#">
+				<label for="fname">Kode Mata Kuliah</label>
+				<input type="text" placeholder="Kode Mata Kuliah..">
+				<label for="fname">Kode Kelas</label>
+				<input type="text" placeholder="Kode Kelas..">
+				<label for="fname">Dosen</label>
+				<input type="text" placeholder="Dosen..">											
+				<label for="fname">Periode</label>
+				<input type="text" placeholder="Periode..">
+				<label for="fname">Jam</label>
+				<input type="text" placeholder="Jam..">				
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+</div> 
 <body>
 <div class="container">
   <header>    
@@ -141,61 +180,55 @@
 		  <div id="Paris" class="w3-container w3-border city" style="display:none">
 			<h3>Kelola Kelas</h3>
 			  <p>
-				<a href="#tambahDosen"> Tambah </a>
+				<a href="#tambahkelas"> Tambah </a>
 			  </p>
 			  <table class="nice-table" width="100%">
 			  <thead
 				<tr>
-					<th>Kode Mata Kuliah</th>
-					<th>Nama Mata Kuliah</th>
-					<th>Text Book</th>
+					<th>Kode Kelas</th>
+					<th>Daftar Mahasiswa</th>
+					<th>Dosen PA</th>
 					<th>Status</th>
 					<th>Proses</th>
 				</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td>Foto</td>
-					<td>1606</td>
-					<td>17 Januari 2017</td>
+					<td>2016SA</td>
+					<td>....</td>
+					<td>Slamet Rahardjo</td>
 					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
+					<td align="center"><a href="#tambahkelas"> View </a> | <a href="#tambahkelas"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
 				</tr>
 				<tr>
-					<td>Video</td>
-					<td>1606</td>
-					<td>27 Januari 2017</td>
+					<td>2016SB</td>
+					<td>....</td>
+					<td>Wildan Wicaksono</td>
 					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
+					<td align="center"><a href="#tambahkelas"> View </a> | <a href="#tambahkelas"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
 				</tr>
 				<tr>
-					<td>Foto</td>
-					<td>1606</td>
-					<td>28 Januari 2017</td>
+					<td>2016SC</td>
+					<td>....</td>
+					<td>Mehmet Marpaung</td>
 					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
+					<td align="center"><a href="#tambahkelas"> View </a> | <a href="#tambahkelas"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
 				</tr>
 				<tr>
-					<td>Foto</td>
-					<td>1606</td>
-					<td>30 Januari 2017</td>
+					<td>2015FA</td>
+					<td>....</td>
+					<td>Poltak Silalahi</td>
 					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
+					<td align="center"><a href="#tambahkelas"> View </a> | <a href="#tambahkelas"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
 				</tr>
 				<tr>
-					<td>Penelitian</td>
-					<td>1606</td>
-					<td>5 Februari 2017</td>
+					<td>2015FB</td>
+					<td>....</td>
+					<td>Ahmad Ridwan</td>
 					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
+					<td align="center"><a href="#tambahkelas"> View </a> | <a href="#tambahkelas"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
 				</tr>
-				<tr>
-					<td>Video</td>
-					<td>1606</td>
-					<td>12 Februari 2017</td>
-					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
-				</tr>
+				
 				<tr align="right">
 					<th colspan="5">Page 1 of 25 |< < > >|</th>      		
 				</tr>
@@ -207,61 +240,60 @@
 		  <div id="Tokyo" class="w3-container w3-border city" style="display:none">
 			<h3>Kelola Jadwal</h3>
 			  <p>
-				<a href="#tambahDosen"> Tambah </a>
+				<a href="#tambahjadwal"> Tambah </a>
 			  </p>
 			  <table class="nice-table" width="100%">
 			  <thead
 				<tr>
 					<th>Kode Mata Kuliah</th>
-					<th>Nama Mata Kuliah</th>
-					<th>Text Book</th>
-					<th>Status</th>
+					<th>Kode Kelas</th>
+					<th>NID</th>
+					<th>Periode</th>
+					<th>Jam</th>
 					<th>Proses</th>
 				</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td>Foto</td>
-					<td>1606</td>
-					<td>17 Januari 2017</td>
-					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
+					<td>CSIE802073</td>
+					<td>2016SA</td>
+					<td>1968171083021001</td>
+					<td>06/02/2017 - 02/06/2017</td>
+					<td>14:00 WIB - 16:30 WIB</td>
+					<td align="center"><a href="#tambahjadwal"> View </a> | <a href="#tambahjadwal"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
 				</tr>
 				<tr>
-					<td>Video</td>
-					<td>1606</td>
-					<td>27 Januari 2017</td>
-					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
+					<td>CSIE802073</td>
+					<td>2016SB</td>
+					<td>1969171082021001</td>
+					<td>06/02/2017 - 02/06/2017</td>
+					<td>19:00 WIB - 21:30 WIB</td>
+					<td align="center"><a href="#tambahjadwal"> View </a> | <a href="#tambahjadwal"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
 				</tr>
 				<tr>
-					<td>Foto</td>
-					<td>1606</td>
-					<td>28 Januari 2017</td>
-					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
+					<td>CSIE802073</td>
+					<td>2016SC</td>
+					<td>1968171083021001</td>
+					<td>06/02/2017 - 02/06/2017</td>
+					<td>19:00 WIB - 21:30 WIB</td>
+					<td align="center"><a href="#tambahjadwal"> View </a> | <a href="#tambahjadwal"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
 				</tr>
 				<tr>
-					<td>Foto</td>
-					<td>1606</td>
-					<td>30 Januari 2017</td>
-					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
+					<td>CSIM801021</td>
+					<td>2016SA</td>
+					<td>1968170983021001</td>
+					<td>06/02/2017 - 02/06/2017</td>
+					<td>14:00 WIB - 16:30 WIB</td>
+					<td align="center"><a href="#tambahjadwal"> View </a> | <a href="#tambahjadwal"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
 				</tr>
 				<tr>
-					<td>Penelitian</td>
-					<td>1606</td>
-					<td>5 Februari 2017</td>
-					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
-				</tr>
-				<tr>
-					<td>Video</td>
-					<td>1606</td>
-					<td>12 Februari 2017</td>
-					<td>Aktif</td>
-					<td align="center">Edit | Delete</td>
-				</tr>
+					<td>CSIM801021</td>
+					<td>2016SB</td>
+					<td>1968171083021001</td>
+					<td>06/02/2017 - 02/06/2017</td>
+					<td>19:00 WIB - 21:30 WIB</td>
+					<td align="center"><a href="#tambahjadwal"> View </a> | <a href="#tambahjadwal"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+				</tr>				
 				<tr align="right">
 					<th colspan="5">Page 1 of 25 |< < > >|</th>      		
 				</tr>
