@@ -1,24 +1,26 @@
 <html>
+
 <head>
-<title>UNIVERSITAS AGILE</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/nav.css" rel="stylesheet" type="text/css">
-<link href="css/slide.css" rel="stylesheet" type="text/css">
-<link href="css/tab.css" rel="stylesheet" type="text/css">
+    <title>UNIVERSITAS AGILE</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <link href="css/slide.css" rel="stylesheet" type="text/css">
+    <link href="css/tab.css" rel="stylesheet" type="text/css">
 </head>
 <div id="openModal" class="modalDialog">
-		<div>
-			<a href="#close" title="Close" class="close">X</a>
-			<h2>Login</h2>
-			<form action="administrator/index.html">
-				<label for="fname">Username</label>
-				<input type="text" placeholder="Your username..">
-				<label for="lname">Password</label>
-				<input type="text" placeholder="Your password..">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-</div> 
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Login</h2>
+        <form action="administrator/index.html">
+            <label for="fname">Username</label>
+            <input type="text" placeholder="Your username..">
+            <label for="lname">Password</label>
+            <input type="text" placeholder="Your password..">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
 <body>
 <div class="container">
   <header>    
@@ -54,125 +56,418 @@
     	</tr>
     </table>    	
 	</nav>         
-      	<div class="w3-content w3-display-container">
+      <div class="w3-display-container" style="width: 100%">
 		  <img class="mySlides" src="images/agileuniversity.png" style="width:100%"> 
 		  <img class="mySlides" src="images/agilebrain.png" style="width:100%"> 
 		  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 		  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-	</div>	    
+		</div>	    
   </header>
-  <section>
-    <h2 class="noDisplay">Main Content</h2>
-  <section>
-    <h2 class="noDisplay">Main Content</h2>
-    <div class="secondary_content">
-		<div class="w3-bar w3-blue">
-			<button class="w3-bar-item w3-button tablink w3-red">Senin</button>
-			<button class="w3-bar-item w3-button tablink">Selasa</button>
-			<button class="w3-bar-item w3-button tablink">Rabu</button>
-			<button class="w3-bar-item w3-button tablink">Kamis</button>
-			<button class="w3-bar-item w3-button tablink">Jumat</button>
-			<button class="w3-bar-item w3-button tablink">Sabtu</button>
-		</div>
-		  <div id="senin" class="w3-container w3-border city">
-			<h3>Senin</h3>
-			  <table class="nice-table" width="100%">
-				<thead>
-					<th>&nbsp;</th>
-					<th>R2A</th>
-					<th>R2B</th>
-					<th>R3A</th>
-					<th>R3B</th>
-					<th>R4A</th>
-					<th>R4B</th>
-				</thead>
-				<tbody>
-				<tr>
-					<td>08.00 - 10.30 WIB</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>11.00 - 13.30 WIB</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>14.00 - 16.30 WIB</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>19.00 - 21.30 WIB</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				</tbody>
-				</table>
-		  </div>
-    </div>    
-  </section>
+        <section>
+            <h2 class="noDisplay">Main Content</h2>
+            <section>
+                <h2 class="noDisplay">Main Content</h2>
+                <div class="secondary_content">
+                    <div class="w3-bar w3-blue">
+                        <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'senin')">Senin</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'selasa')">Selasa</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'rabu')">Rabu</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'kamis')">Kamis</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'jumat')">Jumat</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'sabtu')">Sabtu</button>
+                    </div>
+                    <div id="senin" class="w3-container w3-border city">
+                        <h3>Senin</h3>
+														<table class="nice-table" width="100%">
+																<thead>
+																		<th>&nbsp;</th>
+																		<th>Ruang 2A</th>
+																		<th>Ruang 2B</th>
+																		<th>Ruang 3A</th>
+																		<th>Ruang 3B</th>
+																		<th>Ruang 4A</th>
+																		<th>Ruang 4B</th>
+																</thead>
+																<tbody>
+																		<tr>
+																				<td>08.00 - 10.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>11.00 - 13.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>14.00 - 16.30 WIB</td>
+																				<td>MPPTI.2016SA</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>19.00 - 21.30 WIB</td>
+																				<td>MANDAT.2016FA</td>
+																				<td>MANDAT.2016FB</td>
+																				<td>MPPTI.2016SC</td>
+																				<td>MITI.2015F</td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																</tbody>
+														</table>
+										</div>
+                    <div id="selasa" class="w3-container w3-border city"  style="display:none">
+                        <h3>Selasa</h3>
+														<table class="nice-table" width="100%">
+																<thead>
+																		<th>&nbsp;</th>
+																		<th>Ruang 2A</th>
+																		<th>Ruang 2B</th>
+																		<th>Ruang 3A</th>
+																		<th>Ruang 3B</th>
+																		<th>Ruang 4A</th>
+																		<th>Ruang 4B</th>
+																</thead>
+																<tbody>
+																		<tr>
+																				<td>08.00 - 10.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>11.00 - 13.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>14.00 - 16.30 WIB</td>
+																				<td>DTPL.2016SA</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>19.00 - 21.30 WIB</td>
+																				<td>INTI.2016FA</td>
+																				<td>AKPSI.2016FB</td>
+																				<td>DTPL.2016SB</td>
+																				<td>DTPL.2016SC</td>
+																				<td>MPPTI.2015FA</td>
+																				<td>TKTI.2015F</td>
+																		</tr>
+																</tbody>
+														</table>
+										</div>
+                    <div id="rabu" class="w3-container w3-border city"  style="display:none">
+                        <h3>Rabu</h3>
+														<table class="nice-table" width="100%">
+																<thead>
+																		<th>&nbsp;</th>
+																		<th>Ruang 2A</th>
+																		<th>Ruang 2B</th>
+																		<th>Ruang 3A</th>
+																		<th>Ruang 3B</th>
+																		<th>Ruang 4A</th>
+																		<th>Ruang 4B</th>
+																</thead>
+																<tbody>
+																		<tr>
+																				<td>08.00 - 10.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>11.00 - 13.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>14.00 - 16.30 WIB</td>
+																				<td>MSSI.2016SA</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>19.00 - 21.30 WIB</td>
+																				<td>SSP.2016FA</td>
+																				<td>MANDAT.2016FB</td>
+																				<td>MSSI.2016SB</td>
+																				<td>MSSI.2016SC</td>
+																				<td>MANRISK.2015FA</td>
+																				<td>MANRISK.2015FB</td>
+																		</tr>
+																</tbody>
+														</table></div>
+                    <div id="kamis" class="w3-container w3-border city"  style="display:none">
+                        <h3>Kamis</h3>
+														<table class="nice-table" width="100%">
+																<thead>
+																		<th>&nbsp;</th>
+																		<th>Ruang 2A</th>
+																		<th>Ruang 2B</th>
+																		<th>Ruang 3A</th>
+																		<th>Ruang 3B</th>
+																		<th>Ruang 4A</th>
+																		<th>Ruang 4B</th>
+																</thead>
+																<tbody>
+																		<tr>
+																				<td>08.00 - 10.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>11.00 - 13.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>14.00 - 16.30 WIB</td>
+																				<td>MPPI.2016SA</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>19.00 - 21.30 WIB</td>
+																				<td>AKPSI.2016FA</td>
+																				<td>INTI.2016FB</td>
+																				<td>MPPI.2016SB</td>
+																				<td>MPPTI.2015FB</td>
+																				<td></td>
+																				<td>EBUSS.2015F</td>
+																		</tr>
+																</tbody>
+														</table></div>
+                    <div id="jumat" class="w3-container w3-border city"  style="display:none">
+                        <h3>Jumat</h3>
+														<table class="nice-table" width="100%">
+																<thead>
+																		<th>&nbsp;</th>
+																		<th>Ruang 2A</th>
+																		<th>Ruang 2B</th>
+																		<th>Ruang 3A</th>
+																		<th>Ruang 3B</th>
+																		<th>Ruang 4A</th>
+																		<th>Ruang 4B</th>
+																</thead>
+																<tbody>
+																		<tr>
+																				<td>08.00 - 10.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>11.00 - 13.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>14.00 - 16.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>19.00 - 21.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td>MPPI.2016SC</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																</tbody>
+														</table></div>
+										<div id="sabtu" class="w3-container w3-border city"  style="display:none">
+                        <h3>Sabtu</h3>
+														<table class="nice-table" width="100%">
+																<thead>
+																		<th>&nbsp;</th>
+																		<th>Ruang 2A</th>
+																		<th>Ruang 2B</th>
+																		<th>Ruang 3A</th>
+																		<th>Ruang 3B</th>
+																		<th>Ruang 4A</th>
+																		<th>Ruang 4B</th>
+																</thead>
+																<tbody>
+																		<tr>
+																				<td>08.00 - 10.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>11.00 - 13.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>14.00 - 16.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																		<tr>
+																				<td>19.00 - 21.30 WIB</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																		</tr>
+																</tbody>
+														</table></div>
+										<br/>
+                </div>
+            </section>
 
-  
-  <div class="social">
-    <div class="row">
-		<div class="columns">
-			<p>Layanan</p>
-			<p>- <a href="layanan_agenda.html" title="Agenda Kegiatan Kampus">Agenda</a></p>
-			<p>- <a href="layanan_foto.html" title="Layanan Foto Kampus">Foto</a></p>
-			<p>- <a href="layanan_video.html" title="Layanan Video Kampus">Video</a></p>
-			<p>- <a href="layanan_radio.html" title="Layanan Radio Streaming">Radio Streaming</a></p>
-		</div>
-		<div class="columns">	
-			<p>- <a href="forum.html" title="Forum Komunikasi">Forum</a></p>
-			<p>- <a href="ukm.html" title="Unit Kegiatan Kampus">UKM</a></p>
-		</div>
-		<div class="columns">	
-			<p>Contact Us</p>
-			<p>Jl Agile University</p>
-			<p>Telp : 021-9586579</p>
-			<p>Email : <a href="mailto:agieluniversity@gmail.com">agieluniversity@gmail.com</a></p>
-			<p><a href="http://www.universityagile.tk">http://www.universityagile.tk</a></p>
-		</div>
-	</div>
-  </div>
-  <footer class="secondary_header footer">
-    <div class="copyright">UNIVERSITAS AGILE&copy;201<strong>7</strong></div>
-  </footer>
-</div>
-<script language="javascript">
-var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-var slideIndex = 0;
-carousel();
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} 
-    x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 2000); 
-}
-</script>
+
+            <div class="social">
+                <div class="row">
+                    <div class="columns">
+                        <p>Layanan</p>
+                        <p>- <a href="layanan_agenda.html" title="Agenda Kegiatan Kampus">Agenda</a></p>
+                        <p>- <a href="layanan_foto.html" title="Layanan Foto Kampus">Foto</a></p>
+                        <p>- <a href="layanan_video.html" title="Layanan Video Kampus">Video</a></p>
+                        <p>- <a href="layanan_radio.html" title="Layanan Radio Streaming">Radio Streaming</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>- <a href="forum.html" title="Forum Komunikasi">Forum</a></p>
+                        <p>- <a href="ukm.html" title="Unit Kegiatan Kampus">UKM</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>Contact Us</p>
+                        <p>Jl Agile University</p>
+                        <p>Telp : 021-9586579</p>
+                        <p>Email : <a href="mailto:agieluniversity@gmail.com">agieluniversity@gmail.com</a></p>
+                        <p><a href="http://www.universityagile.tk">http://www.universityagile.tk</a></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="secondary_header footer">
+                <div class="copyright">UNIVERSITAS AGILE&copy;201<strong>7</strong></div>
+            </footer>
+    </div>
+    <script language="javascript">
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+				function openCity(evt, cityName) {
+					var i, x, tablinks;
+					x = document.getElementsByClassName("city");
+					for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablink");
+					for (i = 0; i < x.length; i++) {
+							tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+					}
+					document.getElementById(cityName).style.display = "block";
+					evt.currentTarget.className += " w3-red";
+				}
+				
+    </script>
 </body>
+
 </html>
