@@ -26,32 +26,32 @@
     	<tr>
     		<td align="left">
     			<ul>
-				  <li><a href="index.html">Serambi</a></li>
-				  <li><a href="about.html">Tentang Agile</a></li>
+				  <li><a href="index.html" title="Halaman Utama">Serambi</a></li>
+				  <li><a href="about.html" title="Selayang Pandang">Tentang Agile</a></li>
 				  <li><a href="#">Akademik</a>
 					<ul>
-					  <li><a href="#">Jadwal</a></li>
-					  <li><a href="#">Mata Kuliah</a></li>
-					  <li><a href="#">Registerasi</a></li>
+					  <li><a href="jadwal.html" title="Halaman Jadwal Kuliah">Jadwal</a></li>
+					  <li><a href="matkul.html" title="Halaman Mata Kuliah">Mata Kuliah</a></li>
+					  <li><a href="registrasi_mahasiswa.html" title="Registrasi Mata Kuliah">Registrasi</a></li>
 					</ul>
 				  </li>
-				  <li><a href="#">Penelitian</a></li>
-				  <li><a href="#">Civitas</a>
+				  <li><a href="penelitian.html" title="Halaman Penelitian">Penelitian</a></li>
+				<li><a href="#">Civitas</a>
 					<ul>
-						<li><a href="#">Dosen</a></li>
-						<li><a href="#">Staff</a></li>
-						<li><a href="#">Alumni</a></li>
+						<li><a href="dosen.html" title="Halaman Dosen">Dosen</a></li>
+						<li><a href="staff.html" title="Halaman Staff">Staff</a></li>
+						<li><a href="alumni.html" title="Halaman Alumni">Alumni</a></li>
 					</ul>
 				  </li>				  				  		
 				</ul>
     		</td>    	
     		<td align="right">
-    			<a href="#" title="Indonesia"><img src="images/indonesia.png" width=20px height=15px></a>
-    			<a href="#" title="English"><img src="images/english.png" width=20px height=15px></a>
+    			<a href="index.html" title="Indonesia"><img src="images/indonesia.png" width=20px height=15px></a>
+    			<a href="en/index.html" title="English"><img src="images/english.png" width=20px height=15px></a>
     			<a href="#openModal" title="Login"><img src="images/logoagile.png" width=20px height=15px></a>   &nbsp;			
     		</td>    		
     	</tr>
-    </table>    	
+	</table> 	
 	</nav>         
       <div class="w3-content w3-display-container">
 		  <img class="mySlides" src="images/agileuniversity.png" style="width:100%"> 
@@ -101,11 +101,9 @@
 <script language="javascript">
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -118,7 +116,6 @@ function showDivs(n) {
 }
 var slideIndex = 0;
 carousel();
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
