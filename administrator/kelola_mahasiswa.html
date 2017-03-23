@@ -3,31 +3,14 @@
 <title>UNIVERSITAS AGILE</title>
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 <link href="../css/nav.css" rel="stylesheet" type="text/css">
-</head>
-<div id="tambahDosen" class="modalDialog">
-		<div>
-			<a href="#close" title="Close" class="close">X</a>
-			<h2>Tambah Data Mahasiswa</h2>
-			<form action="#">				
-				<label for="fname">Nama Depan</label>
-				<input type="text" placeholder="Your username..">
-				<label for="fname">Nama Belakang</label>
-				<input type="text" placeholder="Your username..">				
-				<label for="lname">NPM</label>
-				<input type="text" placeholder="Your password..">
-				<label for="fname">Pendidikan Terakhir</label>
-				<input type="text" placeholder="Your username..">
-				<select name="status_mahasiswa" placeholder="Status Mahasiswa ..">
-					<option>Aktif</option>
-					<option>Tunda</option>
-					<option>Batal</option>
-				</select>
-				<label for="fname">Foto</label>
-				<input type="file" placeholder="Your username..">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-</div> 
+</head> 
+<script language="JavaScript">
+   function konfirmasi(id)
+   {       
+       tanya = confirm('Anda yakin ingin menghapus data ini ?');
+       if (tanya == true) return ;       
+   }
+</script>
 <body>
 <div class="container">
   <header>    
@@ -65,7 +48,7 @@
       <h1 class="title"></h1>    
       <h3>Kelola Data Mahasiswa</h3>
       <p>
-      	<a href="#tambahDosen"> Tambah </a>
+      	<a href="tambah_mahasiswa.html"> Tambah </a>
       </p>
       <table class="nice-table" width="100%">
       <thead
@@ -81,43 +64,43 @@
      	<tbody>
       	<tr>
       		<td>Mansyur</td>
-      		<td>1606</td>
+      		<td>1601</td>
       		<td>Ilmu Komputer</td>
       		<td>S2 Magister Teknologi Informasi</td>
       		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
+      		<td align="center"><a href="lihat_mahasiswa.html"> View </a> | <a href="tambah_mahasiswa.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
       	</tr>
       	<tr>
       		<td>Muhamad Guntur</td>
-      		<td>1606</td>
+      		<td>1602</td>
       		<td>Ilmu Komputer</td>
       		<td>S2 Magister Teknologi Informasi</td>
       		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
+      		<td align="center"><a href="lihat_mahasiswa.html"> View </a> | <a href="tambah_mahasiswa.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
       	</tr>
       	<tr>
       		<td>Nilam Amalia P</td>
-      		<td>1606</td>
+      		<td>1603</td>
       		<td>Ilmu Komputer</td>
       		<td>S2 Magister Teknologi Informasi</td>
       		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
+      		<td align="center"><a href="lihat_mahasiswa.html"> View </a> | <a href="tambah_mahasiswa.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
       	</tr>
       	<tr>
       		<td>Nurcholis Ramlan</td>
-      		<td>1606</td>
+      		<td>1604</td>
       		<td>Ilmu Komputer</td>
       		<td>S2 Magister Teknologi Informasi</td>
       		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
+      		<td align="center"><a href="lihat_mahasiswa.html"> View </a> | <a href="tambah_mahasiswa.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
       	</tr>
       	<tr>
       		<td>Retno Dewiyanti</td>
-      		<td>1606</td>
+      		<td>1605</td>
       		<td>Ilmu Komputer</td>
       		<td>S2 Magister Teknologi Informasi</td>
       		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
+      		<td align="center"><a href="lihat_mahasiswa.html"> View </a> | <a href="tambah_mahasiswa.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
       	</tr>
       	<tr>
       		<td>Rifka Widyastuti</td>
@@ -125,7 +108,7 @@
       		<td>Ilmu Komputer</td>
       		<td>S2 Magister Teknologi Informasi</td>
       		<td>Aktif</td>
-      		<td align="center">Edit | Delete</td>
+      		<td align="center"><a href="lihat_mahasiswa.html"> View </a> | <a href="tambah_mahasiswa.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
       	</tr>
       	<tr align="right">
       		<th colspan="5">Page 1 of 25 |< < > >|</th>      		

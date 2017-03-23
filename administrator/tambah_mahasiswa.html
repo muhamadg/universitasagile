@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>UNIVERSITAS AGILE</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/nav.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+  <header>    
+    <nav id="primary_nav_wrap">
+    <table width=100%>
+    	<tr>
+    		<td align="left">
+    			<ul>
+				  <li><a href="index.html">Serambi</a></li>				  
+				  <li><a href="#">Administrator</a>
+					<ul>
+						<li><a href="kelola_dosen.html">Kelola Dosen</a></li>
+						<li><a href="kelola_mahasiswa.html">Kelola Mahasiswa</a></li>
+						<li><a href="kelola_matkul.html">Kelola Mata Kuliah</a></li>
+						<li><a href="kelola_layanan.html">Kelola Layanan</a></li>
+					</ul>
+				  </li>				  		
+				</ul>
+    		</td>    	
+    		<td align="right">
+    			<a href="#" title="Indonesia"><img src="../images/indonesia.png" width=20px height=15px></a>
+    			<a href="#" title="English"><img src="../images/english.png" width=20px height=15px></a>
+    			<a href="../index.html" title="Logout"><img src="../images/logoagile.png" width=20px height=15px></a>   &nbsp;			
+    		</td>    		
+    	</tr>
+    </table>    	
+	</nav>	
+    <div class="primary_header">
+      <h1 class="title"></h1>
+    </div>
+  </header>
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    <div class="secondary_content">
+      <h1 class="title"></h1>    
+      <h3>Kelola Mahasiswa</h3>
+      <p>
+      	<a href="kelola_mahasiswa.html"> Kembali </a>
+      </p>
+      <table class="nice-table" width="100%">
+      <thead
+      	<tr>
+      		<th colspan="8">Form Kelola Data Mahasiswa</th>      		
+      	</tr>
+	  </thead>	  
+      <tbody>
+		<tr>
+      		<th colspan="8">Identitas Mahasiswa</th>      		
+      	</tr>
+      	<tr>
+      		<td>Nama Depan</td>
+      		<td><input type="text" placeholder="Masukkan Nama Depan"></td>
+      		<td>Nama Belakang</td>
+      		<td><input type="text" placeholder="Masukkan Nama Belakang"></td>
+			<td>NPM</td>
+      		<td><input type="text" placeholder="Masukkan NPM"></td>
+			<td>Nama Sesuai Ijazah</td>
+      		<td><input type="text" placeholder="Masukkan Nama Sesuai Ijazah"></td> 		
+      	</tr> 
+		<tr>
+      		<td>Pendidikan Terakhir</td>
+      		<td><input type="text" placeholder="Masukkan Pendidikan Terakhir"></td>  
+			<td>Jalur Masuk</td>
+      		<td><input type="text" placeholder="Masukkan Jalur Masuk"></td>
+      		<td>Fakultas</td>
+      		<td><select name="#" placeholder="Status Kawin">
+			<option>Fasilkom</option>
+			<option>FMIPA</option>
+			<option>FTMD</option>
+			</select></td> 
+			<td>Program Studi</td>
+      		<td><select name="#" placeholder="Status Kawin">
+			<option>Teknologi Informasi</option>
+			<option>Sistem Informasi</option>			
+			</select></td>       		
+      	</tr>
+		<tr>
+      		<td>Jenjang</td>
+      		<td><input type="text" placeholder="Masukkan Jenjang"></td>
+      		<td>Kurikulum</td>
+      		<td><input type="text" placeholder="Masukkan Kurikulum"></td>
+			<td>Peminatan</td>
+      		<td><input type="text" placeholder="Masukkan Peminatan"></td>	
+			<td>Status</td>
+      		<td><select name="#" placeholder="Pilih Jenis Kelamin">
+			<option>Aktif</option>
+			<option>Non Aktif</option>
+			</select></td>
+      	</tr>
+		<tr>
+      		<th colspan="8">Data Mahasiswa</th>      		
+      	</tr>		
+		<tr>
+      		<td>Tempat Lahir</td>
+      		<td><input type="text" placeholder="Masukkan Tempat Lahir"></td>
+			<td>Tanggal Lahir</td>
+      		<td><input type="text" placeholder="Masukkan Tanggal Lahir"></td>
+			<td>Status Kawin</td>
+      		<td><select name="#" placeholder="Status Kawin">
+			<option>Belum Kawin</option>
+			<option>Kawin</option>
+			<option>Janda/Duda</option>
+			</select></td>			
+			<td>Jenis Kelamin</td>
+      		<td><select name="#" placeholder="Pilih Jenis Kelamin">
+			<option>Laki-laki</option>
+			<option>Wanita</option>
+			</select></td>			
+      	</tr>  
+		<tr>
+      		<td>Alamat</td>
+      		<td><textarea></textarea></td>
+			<td>No.HP</td>
+      		<td><input type="text" placeholder="Masukkan No.Hp"></td>
+      		<td>Agama</td>
+      		<td><select name="#" placeholder="Status Kawin">
+			<option>Islam</option>
+			<option>Kristen Protestan</option>
+			<option>Kristen Katolik</option>
+			<option>Hindu</option>
+			<option>Budha</option>
+			</select></td> 
+			<td>Golongan Darah</td>
+      		<td><select name="#" placeholder="Status Kawin">
+			<option>A</option>
+			<option>AB</option>
+			<option>B</option>
+			<option>O</option>			
+			</select></td>     		
+      	</tr>
+		<tr>
+      		<td>Foto</td>
+      		<td colspan="7"><input type="file"></td>						  		
+      	</tr>
+		<tr>
+      		<th colspan="8">Orang Tua</th>      		
+      	</tr>
+		<tr>
+      		<td>Nama Ayah</td>
+      		<td><input type="text" placeholder="Masukkan Nama Ayah"></td>
+      		<td>Tahun Lahir Ayah</td>
+      		<td><input type="text" placeholder="Masukkan Tahun Lahir Ayah"></td>
+			<td>Nama Ibu</td>
+      		<td><input type="text" placeholder="Masukkan Nama Ibu"></td>
+			<td>Tahun Lahir Ibu</td>
+      		<td><input type="text" placeholder="Masukkan Tahun Lahir Ibu"></td> 		
+      	</tr>
+		<tr>
+      		<td>Alamat Orang Tua</td>
+      		<td colspan="7"><textarea></textarea></td>						  		
+      	</tr> 
+		<tr>
+      		<td>Pendidikan Ayah</td>
+      		<td><input type="text" placeholder="Masukkan Pendidikan Ayah"></td>
+      		<td>Pekerjaan Ayah</td>
+      		<td><input type="text" placeholder="Masukkan Pekerjaan Ayah"></td>
+			<td>Pendidikan Ibu</td>
+      		<td><input type="text" placeholder="Masukkan Pendidikan Ibu"></td>
+			<td>Pekerjaan Ibu</td>
+      		<td><input type="text" placeholder="Masukkan Pekerjaan Ibu"></td> 		
+      	</tr>
+		<tr>
+      		<td>No.HP Orang Tua</td>
+      		<td><input type="text" placeholder="Masukkan Pendidikan Ayah"></td>
+      		<td>No. Telepon Orang Tua</td>
+      		<td><input type="text" placeholder="Masukkan Pekerjaan Ayah"></td>
+			<td colspan="4">
+      	</tr>
+		<tr>
+      		<th colspan="8">Penanggung Biaya</th>      		
+      	</tr>
+		<tr>
+      		<td>Nama Penanggung Biaya</td>
+      		<td><input type="text" placeholder="Masukkan Nama Penanggung Biaya"></td>
+      		<td>Alamat Penanggung Biaya</td>
+      		<td><textarea></textarea></td>
+			<td>Hubungan Penanggung Biaya</td>
+      		<td><input type="text" placeholder="Masukkan Hubungan Penanggung Biaya"></td>
+			<td>No. Telepon Penanggung Biaya</td>
+      		<td><input type="text" placeholder="Masukkan No. Telepon"></td> 		
+      	</tr>
+		<tr>
+      		<th colspan="8">Pekerjaan Mahasiswa</th>      		
+      	</tr>
+		<tr>
+      		<td>Pekerjaan Mahasiswa</td>
+      		<td><input type="text" placeholder="Masukkan Pekerjaan Mahasiswa"></td>
+      		<td>Nama Kantor</td>
+      		<td><input type="text" placeholder="Masukkan Nama Kantor"></td>
+			<td>Alamat Kantor</td>
+      		<td><textarea></textarea></td>
+			<td>No. Telepon Kantor</td>
+      		<td><input type="text" placeholder="Masukkan No. Telepon"></td> 		
+      	</tr>
+      </table> 
+	  <input type="submit" value="SIMPAN">
+      </tbody>       
+      </div>    
+  </section>
+  
+  <div class="social">
+    <div class="row">
+		<div class="columns">
+			<p>Layanan</p>
+			<p>- Agenda</p>
+			<p>- Foto</p>
+			<p>- Video</p>
+			<p>- Radio Streaming</p>
+		</div>
+		<div class="columns">	
+			<p>- Forum</p>
+			<p>- UKM</p>
+		</div>
+		<div class="columns">	
+			<p>Contact Us</p>
+			<p>Jl Agile University</p>
+			<p>Telp : 021-9586579</p>
+			<p>Email : agieluniversity@gmail.com</p>
+			<p>http://www.universityagile.tk</p>
+		</div>
+	</div>
+  </div>
+  <footer class="secondary_header footer">
+    <div class="copyright">UNIVERSITAS AGILE&copy;201<strong>7</strong></div>
+  </footer>
+</div>
+</body>
+</html>
