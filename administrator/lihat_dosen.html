@@ -4,13 +4,6 @@
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 <link href="../css/nav.css" rel="stylesheet" type="text/css">
 </head>
-<script language="JavaScript">
-   function konfirmasi(id)
-   {       
-       tanya = confirm('Anda yakin ingin menghapus data ini ?');
-       if (tanya == true) return ;       
-   }
-</script>
 <body>
 <div class="container">
   <header>    
@@ -48,64 +41,67 @@
       <h1 class="title"></h1>    
       <h3>Kelola Dosen</h3>
       <p>
-      	<a href="tambah_dosen.html"> Tambah </a>
+      	<a href="kelola_dosen.html"> Kembali </a>
       </p>
       <table class="nice-table" width="100%">
       <thead
       	<tr>
-      		<th>Nama</th>
-      		<th>NID</th>
-      		<th>Pendidikan</th>
-      		<th>Status</th>
-      		<th>Proses</th>
+      		<th colspan="8">View Data Dosen</th>      		
       	</tr>
-		</thead>
-     	<tbody>
+	  </thead>
+      <tbody>
       	<tr>
-      		<td>Mansyur</td>
-      		<td>1601</td>
-      		<td>S2 Magister Teknologi Informasi</td>
-      		<td>Aktif</td>
-      		<td align="center"><a href="lihat_dosen.html"> View </a> | <a href="tambah_dosen.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
-      	</tr>
-      	<tr>
-      		<td>Muhamad Guntur</td>
+      		<td>Gelar Depan</td>
+      		<td>-</td>
+			<td>Nama Depan</td>
+      		<td>Muhamad</td>
+      		<td>Nama Belakang</td>
+      		<td>Guntur</td> 
+			<td>Gelar Belakang</td>
+      		<td>S.Kom,.MTI</td>     		
+      	</tr> 
+		<tr>
+      		<td>NID</td>
       		<td>1602</td>
+			<td>Tempat Lahir</td>
+      		<td>Jakarta</td>
+      		<td>Tanggal Lahir</td>
+      		<td>17 Oktober 1983</td> 
+			<td>Jenis Kelamin</td>
+      		<td>Laki-laki</td>     		
+      	</tr>
+		<tr>
+      		<td>Status Kawin</td>
+      		<td>Kawin</td>
+			<td>Fakultas</td>
+      		<td>Fasilkom</td>
+			<td>Kelompok Keahlian</td>
+      		<td>Sistem Manufaktur</td>      		 
+			<td>Jabatan Fungsional</td>
+      		<td>Dosen</td>     		
+      	</tr>  
+		<tr>
+      		<td>Pendidikan</td>
       		<td>S2 Magister Teknologi Informasi</td>
-      		<td>Aktif</td>
-      		<td align="center"><a href="lihat_dosen.html"> View </a> | <a href="tambah_dosen.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+			<td>Project</td>
+      		<td>The 2nd International Manufacturing Engineering Conference And The 3rd Asia Pacific Conference On Manufacturing System (2015) </td>
+      		<td>Publikasi</td>
+      		<td>Model penjadwalan batch pada satu mesin yang mengalami deteriorasi untuk minimasi total biaya simpan dan biaya kualitas, Jurnal Teknik Industri, Vol. 10, No. 1, p. 2637, ISSN 14112485.(2008). </td> 
+			<td>Alamat</td>
+      		<td>Jakarta Timur</td>     		
       	</tr>
-      	<tr>
-      		<td>Nilam Amalia P</td>
-      		<td>1603</td>
-      		<td>S2 Magister Teknologi Informasi</td>
-      		<td>Aktif</td>
-      		<td align="center"><a href="lihat_dosen.html"> View </a> | <a href="tambah_dosen.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+		<tr>
+      		<td>Foto</td>
+      		<td colspan="3"><input type="file"></td>
+			<td>No.HP</td>
+      		<td>0857192593049</td>
+      		<td>Status</td>
+      		<td>Aktif</td>			  		
       	</tr>
-      	<tr>
-      		<td>Nurcholis Ramlan</td>
-      		<td>1604</td>
-      		<td>S2 Magister Teknologi Informasi</td>
-      		<td>Aktif</td>
-      		<td align="center"><a href="lihat_dosen.html"> View </a> | <a href="tambah_dosen.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
-      	</tr>
-      	<tr>
-      		<td>Retno Dewiyanti</td>
-      		<td>1605</td>
-      		<td>S2 Magister Teknologi Informasi</td>
-      		<td>Aktif</td>
-      		<td align="center"><a href="lihat_dosen.html"> View </a> | <a href="tambah_dosen.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
-      	</tr>
-      	<tr>
-      		<td>Rifka Widyastuti</td>
-      		<td>1606</td>
-      		<td>S2 Magister Teknologi Informasi</td>
-      		<td>Aktif</td>
-      		<td align="center"><a href="lihat_dosen.html"> View </a> | <a href="tambah_dosen.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
-      	</tr>
-      	<tr align="right">
-      		<th colspan="5">Page 1 of 25 |< < > >|</th>      		
-      	</tr>
+		<tr>
+      		<td>Keterangan</td>
+      		<td colspan="7">-</td>						  		
+      	</tr>    	
       </table> 
       </tbody>       
       </div>    
