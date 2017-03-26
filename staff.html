@@ -1,0 +1,275 @@
+<html>
+
+<head>
+    <title>UNIVERSITAS AGILE</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <link href="css/slide.css" rel="stylesheet" type="text/css">
+    <link href="css/tab.css" rel="stylesheet" type="text/css">
+</head>
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Login</h2>
+        <form action="administrator/index.html">
+            <label for="fname">Username</label>
+            <input type="text" placeholder="Your username..">
+            <label for="lname">Password</label>
+            <input type="text" placeholder="Your password..">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<body>
+<div class="container">
+  <header>    
+    <nav id="primary_nav_wrap">
+    <table width=100%>
+    	<tr>
+    		<td align="left">
+    			<ul>
+				  <li><a href="index.html" title="Halaman Utama">Serambi</a></li>
+				  <li><a href="about.html" title="Selayang Pandang">Tentang Agile</a></li>
+				  <li><a href="#">Akademik</a>
+					<ul>
+					  <li><a href="jadwal.html" title="Halaman Jadwal Kuliah">Jadwal</a></li>
+					  <li><a href="matkul.html" title="Halaman Mata Kuliah">Mata Kuliah</a></li>
+					  <li><a href="registrasi_mahasiswa.html" title="Registrasi Mata Kuliah">Registrasi</a></li>
+					</ul>
+				  </li>
+				  <li><a href="penelitian.html" title="Halaman Penelitian">Penelitian</a></li>
+				<li><a href="#">Civitas</a>
+					<ul>
+						<li><a href="dosen.html" title="Halaman Dosen">Dosen</a></li>
+						<li><a href="staff.html" title="Halaman Staff">Staff</a></li>
+						<li><a href="alumni.html" title="Halaman Alumni">Alumni</a></li>
+					</ul>
+				  </li>				  				  		
+				</ul>
+    		</td>    	
+    		<td align="right">
+    			<a href="index.html" title="Indonesia"><img src="images/indonesia.png" width=20px height=15px></a>
+    			<a href="en/index.html" title="English"><img src="images/english.png" width=20px height=15px></a>
+    			<a href="#openModal" title="Login"><img src="images/logoagile.png" width=20px height=15px></a>   &nbsp;			
+    		</td>    		
+    	</tr>
+    </table>    	
+	</nav>         
+      <div class="w3-display-container" style="width: 100%">
+		  <img class="mySlides" src="images/agileuniversity.png" style="width:100%"> 
+		  <img class="mySlides" src="images/agilebrain.png" style="width:100%"> 
+		  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>	    
+  </header>
+        <section>
+            <h2 class="noDisplay">Main Content</h2>
+            <section>
+                <h2 class="noDisplay">Main Content</h2>
+                <div class="secondary_content">
+                    <div class="w3-bar w3-blue">
+                        <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'akademik')">Akademik</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'ti')">Layanan TI</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'perpustakaan')">Perpustakaan</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'keamanan')">Keamanan</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'kebersihan')">Layanan Kebersihan</button>
+                    </div>
+                    <div id="akademik" class="w3-container w3-border city">
+                        <h3>Staf Akademik</h3>
+														<table cellpadding="0" cellspacing="20px">
+																<tbody>
+																		<tr>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf01.jpg"	/><br><br>
+																						<strong>Sekretaris Akademik</strong><br/>
+																						Cahyo Wicaksono<br/>
+																						Email : <a href="mailto:cahyo@agile.ac.id">cahyo@agile.ac.id</a>
+																				</td>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf02.jpg"	/><br><br>
+																						<strong>Staf Pelaksana</strong><br/>
+																						Akhmad Faqih Umar<br/>
+																						Email : <a href="mailto:umar@agile.ac.id">umar@agile.ac.id</a>
+																				</td>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf03.jpg"	/><br><br>
+																						<strong>Staf Pelaksana</strong><br/>
+																						Gilang Pratama<br/>
+																						Email : <a href="mailto:gilang@agile.ac.id">gilang@agile.ac.id</a>
+																				</td>																		
+																		</tr>
+																</tbody>
+														</table></div>
+                    <div id="ti" class="w3-container w3-border city" style="display: none">
+                        <h3>Staf Akademik</h3>
+														<table cellpadding="0" cellspacing="20px">
+																<tbody>
+																		<tr>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf04.jpg"	/><br><br>
+																						<strong>Teknisi Senior</strong><br/>
+																						Alfin Wicaksono<br/>
+																						Email : <a href="alfin:cahyo@agile.ac.id">alfin@agile.ac.id</a>
+																				</td>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf05.jpg"	/><br><br>
+																						<strong>Sekretaris Teknisi</strong><br/>
+																						Ayu Andini<br/>
+																						Email : <a href="mailto:ayu@agile.ac.id">ayu@agile.ac.id</a>
+																				</td>
+																		</tr>
+																</tbody>
+														</table></div>
+                    <div id="perpustakaan" class="w3-container w3-border city" style="display: none">
+                        <h3>Staf Akademik</h3>
+														<table cellpadding="0" cellspacing="20px">
+																<tbody>
+																		<tr>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf10.jpg"	/><br><br>
+																						<strong>Kepala Perpustakaan</strong><br/>
+																						Bambang Trihono<br/>
+																						Email : <a href="bambang:cahyo@agile.ac.id">bambang@agile.ac.id</a>
+																				</td>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf11.jpg"	/><br><br>
+																						<strong>Libarian Junior</strong><br/>
+																						Suman Wijaya<br/>
+																						Email : <a href="mailto:suman@agile.ac.id">suman@agile.ac.id</a>
+																				</td>
+																		</tr>
+																</tbody>
+														</table></div>
+                    <div id="keamanan" class="w3-container w3-border city" style="display: none">
+                        <h3>Staf Akademik</h3>
+														<table cellpadding="0" cellspacing="20px">
+																<tbody>
+																		<tr>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf09.jpg"	/><br><br>
+																						<strong>Kepala Keamanan</strong><br/>
+																						Herman Sutepu<br/>
+																						Email : <a href="mailto:herman@agile.ac.id">herman@agile.ac.id</a>
+																				</td>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf07.jpg"	/><br><br>
+																						<strong>Petugas Jaga</strong><br/>
+																						Kadir<br/>
+																						Email : <a href="mailto:kadir@agile.ac.id">kadir@agile.ac.id</a>
+																				</td>
+																		</tr>
+																</tbody>
+														</table></div>
+                    <div id="kebersihan" class="w3-container w3-border city" style="display: none">
+                        <h3>Staf Akademik</h3>
+														<table cellpadding="0" cellspacing="20px">
+																<tbody>
+																		<tr>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf13.jpg"	/><br><br>
+																						<strong>Penanggung Jawab Lt.1 & 2</strong><br/>
+																						Herman Sutepu<br/>
+																						Email : <a href="mailto:herman@agile.ac.id">herman@agile.ac.id</a>
+																				</td>
+																				<td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf06.jpg"	/><br><br>
+																						<strong>Penanggung Jawab Lt.3 & 4</strong><br/>
+																						Kadir<br/>
+																						Email : <a href="mailto:kadir@agile.ac.id">kadir@agile.ac.id</a>
+																				</td><td align="center" style="margin: 20px;padding: 20px;border: 2px groove blue;">
+																						<img src="images/staf/staf12.jpg"	/><br><br>
+																						<strong>Janitor</strong><br/>
+																						Kadir<br/>
+																						Email : <a href="mailto:kadir@agile.ac.id">kadir@agile.ac.id</a>
+																				</td>
+																		</tr>
+																</tbody>
+														</table></div>
+										<br/>
+                </div>
+            </section>
+
+
+            <div class="social">
+                <div class="row">
+                    <div class="columns">
+                        <p>Layanan</p>
+                        <p>- <a href="layanan_agenda.html" title="Agenda Kegiatan Kampus">Agenda</a></p>
+                        <p>- <a href="layanan_foto.html" title="Layanan Foto Kampus">Foto</a></p>
+                        <p>- <a href="layanan_video.html" title="Layanan Video Kampus">Video</a></p>
+                        <p>- <a href="layanan_radio.html" title="Layanan Radio Streaming">Radio Streaming</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>- <a href="forum.html" title="Forum Komunikasi">Forum</a></p>
+                        <p>- <a href="ukm.html" title="Unit Kegiatan Kampus">UKM</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>Contact Us</p>
+                        <p>Jl Agile University</p>
+                        <p>Telp : 021-9586579</p>
+                        <p>Email : <a href="mailto:agieluniversity@gmail.com">agieluniversity@gmail.com</a></p>
+                        <p><a href="http://www.universityagile.tk">http://www.universityagile.tk</a></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="secondary_header footer">
+                <div class="copyright">UNIVERSITAS AGILE&copy;201<strong>7</strong></div>
+            </footer>
+    </div>
+    <script language="javascript">
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+				function openCity(evt, cityName) {
+					var i, x, tablinks;
+					x = document.getElementsByClassName("city");
+					for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablink");
+					for (i = 0; i < x.length; i++) {
+							tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+					}
+					document.getElementById(cityName).style.display = "block";
+					evt.currentTarget.className += " w3-red";
+				}
+				
+    </script>
+</body>
+
+</html>
