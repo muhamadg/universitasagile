@@ -609,5 +609,15 @@ input[type=submit]:hover {
 {
 	background-color: #ffcccc;
 }
+/*link*/
+a:link {
+color:#A5A5A5;
+text-decoration:none;
+}
+
+a:hover {
+color:#A5A5A5;
+text-decoration : underline;
+}
 #menu {
 }
