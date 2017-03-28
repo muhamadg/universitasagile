@@ -1,0 +1,523 @@
+<html>
+
+<head>
+    <title>UNIVERSITAS AGILE</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <link href="css/slide.css" rel="stylesheet" type="text/css">
+    <link href="css/tab.css" rel="stylesheet" type="text/css">
+</head>
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Login</h2>
+        <form action="administrator/index.html">
+            <label for="fname">Username</label>
+            <input type="text" placeholder="Your username..">
+            <label for="lname">Password</label>
+            <input type="text" placeholder="Your password..">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<body>
+<div class="container">
+  <header>    
+    <nav id="primary_nav_wrap">
+    <table width=100%>
+    	<tr>
+    		<td align="left">
+    			<ul>
+				  <li><a href="index.html" title="Halaman Utama">Serambi</a></li>
+				  <li><a href="about.html" title="Selayang Pandang">Tentang Agile</a></li>
+				  <li><a href="#">Akademik</a>
+					<ul>
+					  <li><a href="jadwal.html" title="Halaman Jadwal Kuliah">Jadwal</a></li>
+					  <li><a href="matkul.html" title="Halaman Mata Kuliah">Mata Kuliah</a></li>
+					  <li><a href="registrasi_mahasiswa.html" title="Registrasi Mata Kuliah">Registrasi</a></li>
+					</ul>
+				  </li>
+				  <li><a href="penelitian.html" title="Halaman Penelitian">Penelitian</a></li>
+				<li><a href="#">Civitas</a>
+					<ul>
+						<li><a href="dosen.html" title="Halaman Dosen">Dosen</a></li>
+						<li><a href="staff.html" title="Halaman Staff">Staff</a></li>
+						<li><a href="alumni.html" title="Halaman Alumni">Alumni</a></li>
+					</ul>
+				  </li>				  				  		
+				</ul>
+    		</td>    	
+    		<td align="right">
+    			<a href="index.html" title="Indonesia"><img src="images/indonesia.png" width=20px height=15px></a>
+    			<a href="en/index.html" title="English"><img src="images/english.png" width=20px height=15px></a>
+    			<a href="#openModal" title="Login"><img src="images/logoagile.png" width=20px height=15px></a>   &nbsp;			
+    		</td>    		
+    	</tr>
+    </table>    	
+	</nav>         
+      <div class="w3-display-container" style="width: 100%">
+		  <img class="mySlides" src="images/agileuniversity.png" style="width:100%"> 
+		  <img class="mySlides" src="images/agilebrain.png" style="width:100%"> 
+		  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>	    
+  </header>
+        <section>
+            <h2 class="noDisplay">Main Content</h2>
+            <section>
+                <h2 class="noDisplay">Main Content</h2>
+								<div class="secondary_content">
+										<h3 id="pal">Pelacakan Alumni</h3>
+										<div class="w3-bar w3-blue">
+												<button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'pa')">Pendaftaran Alumni</button>
+												<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'da')">Data Alumni</button>
+												<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'sa')">Statistik Alumni</button>
+										</div>
+										<!--Pelacakan Alumni-->
+										<div id="pa" class="w3-container w3-border city">
+												<form action="#pal">
+														<table cellspacing="0" cellpadding="0" width="100%">
+																<tbody>
+																		<tr>
+																				<td width="20%">Nomor Pokok Mahasiswa</td>
+																				<td><input type="text" placeholder="NPM anda.." /></td>
+																		</tr>
+																		<tr>
+																				<td >Nomor Pokok Alumni</td>
+																				<td><input type="text" placeholder="NPA anda.." /></td>
+																		</tr>
+																		<tr>
+																				<td >Jurusan yang Ditamati</td>
+																				<td>
+																						<select>
+																								<option>S1 - Teknik Informatika</option>
+																								<option>S1 - Sistem Informasi</option>
+																								<option>D3 - Manajemen Informatika</option>
+																								<option>D3 - Teknik Informatika</option>
+																						</select>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td >Tahun Angkatan</td>
+																				<td><input type="text"/></td>
+																		</tr>
+																		<tr>
+																				<td >Kegiatan saat ini</td>
+																				<td>
+																						<input type="radio" name="kegiatan"/>&nbsp;&nbsp;&nbsp;Kerja <br/>
+																						<input type="radio" name="kegiatan"/>&nbsp;&nbsp;&nbsp;Lanjut Kuliah<br/>
+																						<input type="radio"  name="kegiatan" checked/>&nbsp;&nbsp;&nbsp;Lainnya
+																				</td>
+																		</tr>
+																		<tr>
+																				<td >Testimoni Kampus</td>
+																				<td>
+																						<input type="text" name="kegiatan"/>
+																				</td>
+																		</tr>
+																
+																</tbody>
+																<tfoot>
+																		<tr>
+																				<td><input type="submit" value="Simpan"/></td>
+																				<td></td>
+																		</tr>
+																</tfoot>
+														</table>
+												</form>
+													
+										</div>
+										<!--Data Alumni-->
+										<div id="da" class="w3-container w3-border city" style="display: none">
+												<div class="w3-bar w3-sand">
+														<button class="w3-bar-item w3-button tablink" onclick="openAlumni(event,'s1_TI')">S1-Teknik Informatika</button>
+														<button class="w3-bar-item w3-button tablink" onclick="openAlumni(event,'s1_SI')">S1 - Sistem Informasi</button>
+														<button class="w3-bar-item w3-button tablink" onclick="openAlumni(event,'d3_MI')">D3 - Manajemen Informatika</button>
+														<button class="w3-bar-item w3-button tablink" onclick="openAlumni(event,'d3_TI')">D3 - Teknik Informatika</button>
+												</div>
+										<div id="s1_TI" class="w3-container w3-border alumni">
+												<h3>Alumni S1 Teknik Informatika</h3>
+												<table width="100%">
+														<tbody>
+																<tr>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni01.jpg"	/><br><br>
+																				<strong>Andi Yogaswara<strong><br/>Angkatan : 1998<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">yoga@agile.ac.id</a>
+																		</td>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni02.jpg"	/><br><br>
+																				<strong>Aristide Keano<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Keano@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni03.jpg"	/><br><br>
+																				<strong>Syauqi Arjune<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Arjune@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni04.jpg"	/><br><br>
+																				<strong>Abel Alterio<strong><br/>Angkatan : 2002<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Abel@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni05.jpg"	/><br><br>
+																				<strong>Athaya Nararya Putra<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Nararya@agile.ac.id</a>
+																		</td>
+																</tr>
+																<tr>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni06.jpg"	/><br><br>
+																				<strong>Yann Hezekiah<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Yann.Hezekiah@agile.ac.id</a>
+																		</td>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni07.jpg"	/><br><br>
+																				<strong>Raphney H.<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Raphney@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni08.jpg"	/><br><br>
+																				<strong>Fabian Antoine<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Fabian_Antoine@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni09.jpg"	/><br><br>
+																				<strong>Desy Perdana<strong><br/>Angkatan : 2014<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Desy.Perdana@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni10.jpg"	/><br><br>
+																				<strong>Kenzo Julian<strong><br/>Angkatan : 2012<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Julian@agile.ac.id</a>
+																		</td>
+																</tr>
+														</tbody>
+														<tfoot>
+																<tr>
+																		<td colspan="6" align="right">
+																				Page 1 of 5 &nbsp;|< &nbsp;< &nbsp;> &nbsp;	>|
+																		</td>
+																<tr>
+														</tfoot>
+												</table>
+										</div>
+										<div id="s1_SI" class="w3-container w3-border alumni" style="display: none">
+												<h3>Alumni S1 Sistem Informasi</h3>
+												<table width="100%">
+														<tbody>
+																<tr>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni11.jpg"	/><br><br>
+																				<strong>Jourdain Baldev<strong><br/>Angkatan : 1998<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">yoga@agile.ac.id</a>
+																		</td>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni12.jpg"	/><br><br>
+																				<strong>Bertoldi Adam<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Keano@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni33.jpg"	/><br><br>
+																				<strong>Fabian Bertrand<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Arjune@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni14.jpg"	/><br><br>
+																				<strong>Abel Alterio<strong><br/>Angkatan : 2002<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Abel@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni15.jpg"	/><br><br>
+																				<strong>Rendra Sachdev<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Nararya@agile.ac.id</a>
+																		</td>
+																</tr>
+																<tr>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni16.jpg"	/><br><br>
+																				<strong>Yann Hezekiah<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Yann.Hezekiah@agile.ac.id</a>
+																		</td>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni17.jpg"	/><br><br>
+																				<strong>Raphney H.<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Raphney@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni18.jpg"	/><br><br>
+																				<strong>Fabian Antoine<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Fabian_Antoine@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni19.jpg"	/><br><br>
+																				<strong>Desy Perdana<strong><br/>Angkatan : 2014<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Desy.Perdana@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni20.jpg"	/><br><br>
+																				<strong>Kenzo Julian<strong><br/>Angkatan : 2012<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Julian@agile.ac.id</a>
+																		</td>
+																</tr>
+														</tbody>
+														<tfoot>
+																<tr>
+																		<td colspan="6" align="right">
+																				Page 1 of 5 &nbsp;|< &nbsp;< &nbsp;> &nbsp;	>|
+																		</td>
+																<tr>
+														</tfoot>
+												</table>												
+										</div>
+										<div id="d3_MI" class="w3-container w3-border alumni" style="display: none">
+												<h3>Alumni D3 Manajemen Informatika</h3>
+												<table width="100%">
+														<tbody>
+																<tr>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni21.jpg"	/><br><br>
+																				<strong>Jourdain Baldev<strong><br/>Angkatan : 1998<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">yoga@agile.ac.id</a>
+																		</td>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni22.jpg"	/><br><br>
+																				<strong>Bertoldi Adam<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Keano@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni23.jpg"	/><br><br>
+																				<strong>Fabian Bertrand<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Arjune@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni24.jpg"	/><br><br>
+																				<strong>Abel Alterio<strong><br/>Angkatan : 2002<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Abel@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni25.jpg"	/><br><br>
+																				<strong>Rendra Sachdev<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Nararya@agile.ac.id</a>
+																		</td>
+																</tr>
+																<tr>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni26.jpg"	/><br><br>
+																				<strong>Yann Hezekiah<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Yann.Hezekiah@agile.ac.id</a>
+																		</td>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni27.jpg"	/><br><br>
+																				<strong>Raphney H.<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Raphney@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni28.jpg"	/><br><br>
+																				<strong>Fabian Antoine<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Fabian_Antoine@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni29.jpg"	/><br><br>
+																				<strong>Desy Perdana<strong><br/>Angkatan : 2014<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Desy.Perdana@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni30.jpg"	/><br><br>
+																				<strong>Kenzo Julian<strong><br/>Angkatan : 2012<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Julian@agile.ac.id</a>
+																		</td>
+																</tr>
+														</tbody>
+														<tfoot>
+																<tr>
+																		<td colspan="6" align="right">
+																				Page 1 of 5 &nbsp;|< &nbsp;< &nbsp;> &nbsp;	>|
+																		</td>
+																<tr>
+														</tfoot>
+												</table>												
+										</div>
+										<div id="d3_TI" class="w3-container w3-border alumni" style="display: none">
+												<h3>Alumni D3 Teknik Informatika</h3>
+												<table width="100%">
+														<tbody>
+																<tr>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni31.jpg"	/><br><br>
+																				<strong>Jourdain Baldev<strong><br/>Angkatan : 1998<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">yoga@agile.ac.id</a>
+																		</td>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni32.jpg"	/><br><br>
+																				<strong>Bertoldi Adam<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Keano@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni33.jpg"	/><br><br>
+																				<strong>Fabian Bertrand<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Arjune@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni34.jpg"	/><br><br>
+																				<strong>Abel Alterio<strong><br/>Angkatan : 2002<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Abel@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni35.jpg"	/><br><br>
+																				<strong>Rendra Sachdev<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Nararya@agile.ac.id</a>
+																		</td>
+																</tr>
+																<tr>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni36.jpg"	/><br><br>
+																				<strong>Yann Hezekiah<strong><br/>Angkatan : 2001<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Yann.Hezekiah@agile.ac.id</a>
+																		</td>
+																		<td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni37.jpg"	/><br><br>
+																				<strong>Raphney H.<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Raphney@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni38.jpg"	/><br><br>
+																				<strong>Fabian Antoine<strong><br/>Angkatan : 2010<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Fabian_Antoine@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni39.jpg"	/><br><br>
+																				<strong>Desy Perdana<strong><br/>Angkatan : 2014<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Desy.Perdana@agile.ac.id</a>
+																		</td><td class="w3-round-large" align="center" style="margin: 10px;padding: 10px;border: 2px groove green;">
+																				<img style="width: 128px;height: 128px;" class="w3-round-large" src="images/alumni/alumni40.jpg"	/><br><br>
+																				<strong>Kenzo Julian<strong><br/>Angkatan : 2012<br/>
+																				Email : <a href="mailto:umar@agile.ac.id">Julian@agile.ac.id</a>
+																		</td>
+																</tr>
+														</tbody>
+														<tfoot>
+																<tr>
+																		<td colspan="6" align="right">
+																				Page 1 of 5 &nbsp;|< &nbsp;< &nbsp;> &nbsp;	>|
+																		</td>
+																<tr>
+														</tfoot>
+												</table>												
+										</div>
+												
+										</div>
+										<!--Statistik Alumni-->
+										<div id="sa" class="w3-container w3-border city" style="display: none" align="center">
+												<img style="width: 513px;" class="w3-round-large" src="images/statistik/pie.jpg"	/>
+												<img style="width: 600px;" class="w3-round-large" src="images/statistik/line.jpg"	/>
+										</div>
+										 
+								</div>
+                <div class="secondary_content">
+										<h3>Info Lowongan</h3>
+										
+												<table cellpadding="0" cellspacing="20px" align="center">
+														<tbody>
+																<tr>
+																		<td align="center" style="margin: 20px;padding: 20px;">
+																				<a href="$#" target="blank"><img src="images/job/1.jpg"	/></a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;">
+																				<a href="$#" target="blank"><img src="images/job/2.jpg"	/></a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;">
+																				<a href="$#" target="blank"><img src="images/job/3.jpg"	/></a>
+																		</td>
+																</tr><tr>		
+																		<td align="center" style="margin: 20px;padding: 20px;">
+																				<a href="$#" target="blank"><img src="images/job/4.jpg"	/></a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;">
+																				<a href="$#" target="blank"><img src="images/job/5.jpg"	/></a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;">
+																				<a href="$#" target="blank"><img src="images/job/6.jpg"	/></a>
+																		</td>
+																</tr>
+														</tbody>
+												</table>
+												<h4>Klik Logo untuk informasi selengkapnya.</h4>
+                </div>
+            </section>
+
+
+            <div class="social">
+                <div class="row">
+                    <div class="columns">
+                        <p>Layanan</p>
+                        <p>- <a href="layanan_agenda.html" title="Agenda Kegiatan Kampus">Agenda</a></p>
+                        <p>- <a href="layanan_foto.html" title="Layanan Foto Kampus">Foto</a></p>
+                        <p>- <a href="layanan_video.html" title="Layanan Video Kampus">Video</a></p>
+                        <p>- <a href="layanan_radio.html" title="Layanan Radio Streaming">Radio Streaming</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>- <a href="forum.html" title="Forum Komunikasi">Forum</a></p>
+                        <p>- <a href="ukm.html" title="Unit Kegiatan Kampus">UKM</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>Contact Us</p>
+                        <p>Jl Agile University</p>
+                        <p>Telp : 021-9586579</p>
+                        <p>Email : <a href="mailto:agieluniversity@gmail.com">agieluniversity@gmail.com</a></p>
+                        <p><a href="http://www.universityagile.tk">http://www.universityagile.tk</a></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="secondary_header footer">
+                <div class="copyright">UNIVERSITAS AGILE&copy;201<strong>7</strong></div>
+            </footer>
+    </div>
+    <script language="javascript">
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+				function openCity(evt, cityName) {
+					var i, x, tablinks;
+					x = document.getElementsByClassName("city");
+					for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablink");
+					for (i = 0; i < x.length; i++) {
+							tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+					}
+					document.getElementById(cityName).style.display = "block";
+					evt.currentTarget.className += " w3-red";
+				}
+				function openAlumni(evt, cityName) {
+					var i, x, tablinks;
+					x = document.getElementsByClassName("alumni");
+					for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablink");
+					for (i = 0; i < x.length; i++) {
+							tablinks[i].className = tablinks[i].className.replace(" w3-khaki", "");
+					}
+					document.getElementById(cityName).style.display = "block";
+					evt.currentTarget.className += " w3-khaki";
+				}
+				
+    </script>
+</body>
+
+</html>
