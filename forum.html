@@ -63,27 +63,126 @@
   <section>
     <h2 class="noDisplay">Main Content</h2>
     <div class="secondary_content">
-		<div class="row" align="center">
-			<h1 align="center"> Forum </h1>
-		|<a href="forumadm.html">	Administrasi</a>		|		<a href="forummk.html">Mata Kuliah</a>			|		<a href="forumkemahasiswaan.html">"Kemahasiswaan	</a>	|
+	<h3>Forum Mahasiswa Universitas Agile</h3>
+		<div class="w3-bar ">
+			<button class="w3-bar-item w3-blue w3-button tablink w3-red" onclick="openCity(event,'Tokyo')">Forum Diskusi</button>
+			<button class="w3-bar-item w3-blue w3-button tablink" onclick="openCity(event,'Paris')">Latest Discussion</button>
+			<button class="w3-bar-item w3-blue w3-button tablink" onclick="openCity(event,'London')">Start Discussion</button>
+		<div>
+		<div id="London" class="w3-container w3-border city" style="display:none">		
+		<table class="nice-table" align="center">
+			  <tbody>
+				<tr align="center">
+					<td colspan="2">LOGIN</td>										
+				</tr>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" placeholder="Masukkan Username"></td>										
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="text" placeholder="Masukkan Password"></td>										
+				</tr>
+				<tr align="center">
+					<td colspan="2"><input type="Submit" value="Login"></td>										
+				</tr>
+				</tbody>
+		</table>
 		</div>
-		
-		
-    </div>    
+		<div id="Paris" class="w3-container w3-border city" style="display:none">
+			<h4>Latest Discussion</h4>
+			<table class="nice-table" width="100%">
+			  <tbody>
+				<tr align="center">
+					<th>Topik Diskusi</th>
+					<th>Replies</th>
+					<th>Latest Post</th>					
+				</tr>
+				<tr>
+					<td>Formulir Beasiswa Fakultas Teknologi Informasi</td>
+					<td>-</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Pendaftaran Anggota Pecinta Alam</td>
+					<td>-</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Tiket Parkir Kendaraan Habis</td>
+					<td>-</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Peresmian Gedung Baru Mahasiswa Kedokteran</td>
+					<td>-</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Akses Scele 404</td>
+					<td>-</td>
+					<td>-</td>					
+				</tr>
+				<tr align="right">
+						<th colspan="3">Page 1 of 25 |< < > >|</th>      		
+					</tr>
+				</tbody>
+		</table>
+		</div>
+		<div id="Tokyo" class="w3-container w3-border city">
+			<h3>Daftar Forum Diskusi</h3>
+			<table class="nice-table" width="100%">
+			  <tbody>
+				<tr align="center">
+					<th>Nama Forum</th>
+					<th>Topik</th>
+					<th>Post</th>					
+				</tr>
+				<tr>
+					<td>Forum Beasiswa</td>
+					<td align="center">5</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Forum Teknologi Informasi</td>
+					<td align="center">21</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Forum Pasca Sarjana</td>
+					<td align="center">4</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Forum Psikologi</td>
+					<td align="center">14</td>
+					<td>-</td>					
+				</tr><tr>
+					<td>Forum Pecinta Alam</td>
+					<td align="center">8</td>
+					<td>-</td>					
+				</tr>
+				<tr align="right">
+						<th colspan="3">Page 1 of 25 |< < > >|</th>      		
+					</tr>
+				</tbody>
+		</table>
+		</div>
+	</div> 	
   </section>  
   <div class="social">
     <div class="row">
 		<div class="columns">
 			<p>Layanan</p>
-			<p>- Agenda</p>
-			<p>- Foto</p>
-			<p>- Video</p>
-			<p>- Radio Streaming</p>
-		</div>
-		<div class="columns">	
-			<p>- Forum</p>
-			<p>- UKM</p>
-		</div>
+                <p>- <a href="layanan_agenda.html" title="Agenda Kegiatan Kampus">Agenda</a></p>
+                <p>- <a href="layanan_foto.html" title="Layanan Foto Kampus">Foto</a></p>
+                <p>- <a href="layanan_video.html" title="Layanan Video Kampus">Video</a></p>
+                <p>- <a href="layanan_radio.html" title="Layanan Radio Streaming">Radio Streaming</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>- <a href="forum.html" title="Forum Komunikasi">Forum</a></p>
+                        <p>- <a href="ukm.html" title="Unit Kegiatan Kampus">UKM</a></p>
+                    </div>
 		<div class="columns">	
 			<p>Contact Us</p>
 			<p>Jl Agile University</p>
