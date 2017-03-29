@@ -1,0 +1,243 @@
+<html>
+<head>
+<title>UNIVERSITAS AGILE</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/nav.css" rel="stylesheet" type="text/css">
+<link href="css/slide.css" rel="stylesheet" type="text/css">
+</head>
+<div id="openModal" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>Login</h2>
+			<form action="administrator/index.html">
+				<label for="fname">Username</label>
+				<input type="text" placeholder="Your username..">
+				<label for="lname">Password</label>
+				<input type="text" placeholder="Your password..">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+</div> 
+<body>
+<div class="container">
+  <header>    
+    <nav id="primary_nav_wrap">
+    <table width=100%>
+    	<tr>
+    		<td align="left">
+    			<ul>
+				  <li><a href="index.html" title="Halaman Utama">Serambi</a></li>
+				  <li><a href="about.html" title="Selayang Pandang">Tentang Agile</a></li>
+				  <li><a href="#">Akademik</a>
+					<ul>
+					  <li><a href="jadwal.html" title="Halaman Jadwal Kuliah">Jadwal</a></li>
+					  <li><a href="matkul.html" title="Halaman Mata Kuliah">Mata Kuliah</a></li>
+					  <li><a href="registrasi_mahasiswa.html" title="Registrasi Mata Kuliah">Registrasi</a></li>
+					</ul>
+				  </li>
+				  <li><a href="penelitian.html" title="Halaman Penelitian">Penelitian</a></li>
+				<li><a href="#">Civitas</a>
+					<ul>
+						<li><a href="dosen.html" title="Halaman Dosen">Dosen</a></li>
+						<li><a href="staff.html" title="Halaman Staff">Staff</a></li>
+						<li><a href="alumni.html" title="Halaman Alumni">Alumni</a></li>
+					</ul>
+				  </li>				  				  		
+				</ul>
+    		</td>    	
+    		<td align="right">
+    			<a href="index.html" title="Indonesia"><img src="images/indonesia.png" width=20px height=15px></a>
+    			<a href="en/index.html" title="English"><img src="images/english.png" width=20px height=15px></a>
+    			<a href="#openModal" title="Login"><img src="images/logoagile.png" width=20px height=15px></a>   &nbsp;			
+    		</td>    		
+    	</tr>
+	</table> 	
+	</nav>         
+      <div class="w3-content w3-display-container">
+		  <img class="mySlides" src="images/agileuniversity.png" style="width:100%"> 
+		  <img class="mySlides" src="images/agilebrain.png" style="width:100%"> 
+		  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>	    
+  </header>
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    <div class="secondary_content">
+	<h3>Forum Mahasiswa Universitas Agile</h3>
+		<div class="w3-bar ">
+			<button class="w3-bar-item w3-blue w3-button tablink w3-red" onclick="openCity(event,'London')">Start Discussion</button>
+			<button class="w3-bar-item w3-blue w3-button tablink" onclick="openCity(event,'Tokyo')">Forum Diskusi</button>
+			<button class="w3-bar-item w3-blue w3-button tablink" onclick="openCity(event,'Paris')">Latest Discussion</button>
+		<div>
+		<div id="London" class="w3-container w3-border city">		
+		<table class="nice-table" align="center">
+			  <tbody>
+				<tr align="center">
+					<td colspan="2">LOGIN</td>										
+				</tr>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" placeholder="Masukkan Username"></td>										
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="text" placeholder="Masukkan Password"></td>										
+				</tr>
+				<tr align="center">
+					<td colspan="2"><input type="Submit" value="Login"></td>										
+				</tr>
+				</tbody>
+		</table>
+		</div>
+		<div id="Paris" class="w3-container w3-border city" style="display:none">
+			<h4>Latest Discussion</h4>
+			<table class="nice-table" width="100%">
+			  <tbody>
+				<tr align="center">
+					<th>Topik Diskusi</th>
+					<th>Replies</th>
+					<th>Latest Post</th>					
+				</tr>
+				<tr>
+					<td>Formulir Beasiswa Fakultas Teknologi Informasi</td>
+					<td>-</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Pendaftaran Anggota Pecinta Alam</td>
+					<td>-</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Tiket Parkir Kendaraan Habis</td>
+					<td>-</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Peresmian Gedung Baru Mahasiswa Kedokteran</td>
+					<td>-</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Akses Scele 404</td>
+					<td>-</td>
+					<td>-</td>					
+				</tr>
+				<tr align="right">
+						<th colspan="3">Page 1 of 25 |< < > >|</th>      		
+					</tr>
+				</tbody>
+		</table>
+		</div>
+		<div id="Tokyo" class="w3-container w3-border city" style="display:none">
+			<h3>Daftar Forum Diskusi</h3>
+			<table class="nice-table" width="100%">
+			  <tbody>
+				<tr align="center">
+					<th>Nama Forum</th>
+					<th>Topik</th>
+					<th>Post</th>					
+				</tr>
+				<tr>
+					<td>Forum Beasiswa</td>
+					<td align="center">5</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Forum Teknologi Informasi</td>
+					<td align="center">21</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Forum Pasca Sarjana</td>
+					<td align="center">4</td>
+					<td>-</td>					
+				</tr>
+				<tr>
+					<td>Forum Psikologi</td>
+					<td align="center">14</td>
+					<td>-</td>					
+				</tr><tr>
+					<td>Forum Pecinta Alam</td>
+					<td align="center">8</td>
+					<td>-</td>					
+				</tr>
+				<tr align="right">
+						<th colspan="3">Page 1 of 25 |< < > >|</th>      		
+					</tr>
+				</tbody>
+		</table>
+		</div>
+	</div> 	
+  </section>  
+  <div class="social">
+    <div class="row">
+		<div class="columns">
+			<p>Layanan</p>
+                <p>- <a href="layanan_agenda.html" title="Agenda Kegiatan Kampus">Agenda</a></p>
+                <p>- <a href="layanan_foto.html" title="Layanan Foto Kampus">Foto</a></p>
+                <p>- <a href="layanan_video.html" title="Layanan Video Kampus">Video</a></p>
+                <p>- <a href="layanan_radio.html" title="Layanan Radio Streaming">Radio Streaming</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>- <a href="forum.html" title="Forum Komunikasi">Forum</a></p>
+                        <p>- <a href="ukm.html" title="Unit Kegiatan Kampus">UKM</a></p>
+                    </div>
+		<div class="columns">	
+			<p>Contact Us</p>
+			<p>Jl Agile University</p>
+			<p>Telp : 021-9586579</p>
+			<p>Email : agieluniversity@gmail.com</p>
+			<p>http://www.universityagile.tk</p>
+		</div>
+	</div>
+  </div>
+  <footer class="secondary_header footer">
+    <div class="copyright">UNIVERSITAS AGILE&copy;201<strong>7</strong></div>
+  </footer>
+</div>
+<script language="javascript">
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+var slideIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+</body>
+</html>
