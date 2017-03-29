@@ -1,0 +1,297 @@
+<html>
+
+<head>
+    <title>UNIVERSITAS AGILE</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <link href="css/slide.css" rel="stylesheet" type="text/css">
+    <link href="css/tab.css" rel="stylesheet" type="text/css">
+</head>
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Login</h2>
+        <form action="administrator/index.html">
+            <label for="fname">Username</label>
+            <input type="text" placeholder="Your username..">
+            <label for="lname">Password</label>
+            <input type="text" placeholder="Your password..">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<body>
+<div class="container">
+  <header>    
+    <nav id="primary_nav_wrap">
+    <table width=100%>
+    	<tr>
+    		<td align="left">
+    			<ul>
+				  <li><a href="index.html" title="Halaman Utama">Serambi</a></li>
+				  <li><a href="about.html" title="Selayang Pandang">Tentang Agile</a></li>
+				  <li><a href="#">Akademik</a>
+					<ul>
+					  <li><a href="jadwal.html" title="Halaman Jadwal Kuliah">Jadwal</a></li>
+					  <li><a href="matkul.html" title="Halaman Mata Kuliah">Mata Kuliah</a></li>
+					  <li><a href="registrasi_mahasiswa.html" title="Registrasi Mata Kuliah">Registrasi</a></li>
+					</ul>
+				  </li>
+				  <li><a href="penelitian.html" title="Halaman Penelitian">Penelitian</a></li>
+				<li><a href="#">Civitas</a>
+					<ul>
+						<li><a href="dosen.html" title="Halaman Dosen">Dosen</a></li>
+						<li><a href="staff.html" title="Halaman Staff">Staff</a></li>
+						<li><a href="alumni.html" title="Halaman Alumni">Alumni</a></li>
+					</ul>
+				  </li>				  				  		
+				</ul>
+    		</td>    	
+    		<td align="right">
+    			<a href="index.html" title="Indonesia"><img src="images/indonesia.png" width=20px height=15px></a>
+    			<a href="en/index.html" title="English"><img src="images/english.png" width=20px height=15px></a>
+    			<a href="#openModal" title="Login"><img src="images/logoagile.png" width=20px height=15px></a>   &nbsp;			
+    		</td>    		
+    	</tr>
+    </table>    	
+	</nav>         
+      <div class="w3-display-container" style="width: 100%">
+		  <img class="mySlides" src="images/agileuniversity.png" style="width:100%"> 
+		  <img class="mySlides" src="images/agilebrain.png" style="width:100%"> 
+		  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>	    
+  </header>
+        <section>
+            <h2 class="noDisplay">Main Content</h2>
+            <section>
+                <h2 class="noDisplay">Main Content</h2>
+                <div class="secondary_content">
+										<h3>Unit Kegiatan Mahasiswa</h3>
+										<p>
+												<strong>Unit Kegiatan Mahasiswa (UKM) </strong> merupakan wadah untuk menyalurkan apresiasi mahasiswa sesuai dengan minat dan bakat. Kegiatan ini bertujuan untuk menumbuhkan kreatifitas mahasiswa diluar disiplin ilmu yang ditekuni.
+
+										</p>
+										
+										<div class="w3-bar w3-blue">
+												<button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'bs')">Bidang <strong>Seni<strong></button>
+												<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'bo')">Bidang <strong>Olahraga<strong></button>
+												<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'bl')">Bidang <strong>Sosial<strong></button>
+												<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'bp')">Bidang <strong>Pengetahuan<strong></button>
+												<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'bn')">Bidang <strong>Lain-lain<strong></button>
+										</div>
+										
+										<div id="bs" class="w3-container w3-border city">
+												<h4>Bidang Seni</h4>
+												<table cellpadding="0" cellspacing="20px" align="center">
+														<tbody>
+																<tr>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/tari.png"/><br/><br/>
+																						<strong>Seni Tari</strong>
+																				</a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/lukis.jpg"/><br/><br/>
+																						<strong>Seni Lukis</strong>
+																				</a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/mural.png"/><br/><br/>
+																						<strong>3D Art & Mural</strong>
+																				</a>
+																		</td>
+																</tr>
+														</tbody>
+												</table>
+										</div>
+										<div id="bo" class="w3-container w3-border city" style="display: none;">
+												<h4>Bidang Olahraga</h4>
+												<table cellpadding="0" cellspacing="20px" align="center">
+														<tbody>
+																<tr>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/futsal.jpg"/><br/><br/>
+																						<strong>Futsal Campus</strong>
+																				</a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/soccer.jpg"/><br/><br/>
+																						<strong>AgileSoccer</strong>
+																				</a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/martialArt.jpg"/><br/><br/>
+																						<strong>MartialArt</strong>
+																				</a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/basket	.png"/><br/><br/>
+																						<strong>Basket Ball</strong>
+																				</a>
+																		</td>		
+																</tr>
+														</tbody>
+												</table>
+												
+												
+												
+										</div>
+										<div id="bl" class="w3-container w3-border city" style="display: none;">
+												<h4>Bidang Sosial</h4>
+												<table cellpadding="0" cellspacing="20px" align="center">
+														<tbody>
+																<tr>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/pmr.png"/><br/><br/>
+																						<strong>Palang Merah</strong>
+																				</a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/baksos.jpg"/><br/><br/>
+																						<strong>Bakti Sosial</strong>
+																				</a>
+																		</td>
+																</tr>
+														</tbody>
+												</table>
+												
+												
+												
+										</div>
+										<div id="bp" class="w3-container w3-border city" style="display: none;">
+												<h4>Bidang Pengembangan Diri</h4>
+												<table cellpadding="0" cellspacing="20px" align="center">
+														<tbody>
+																<tr>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/english.jpg"/><br/><br/>
+																						<strong>English Camp</strong>
+																				</a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/research.png"/><br/><br/>
+																						<strong>Research Student</strong>
+																				</a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/itNerd.png"/><br/><br/>
+																						<strong>IT Nerd</strong>
+																				</a>
+																		</td>
+																</tr>
+														</tbody>
+												</table>
+												
+												
+												
+										</div>
+										<div id="bn" class="w3-container w3-border city" style="display: none;">
+												<h4>Bidang Lain-lain</h4>
+												<table cellpadding="0" cellspacing="20px" align="center">
+														<tbody>
+																<tr>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/pecinta.jpg"/><br/><br/>
+																						<strong>Mapala</strong>
+																				</a>
+																		</td>
+																		<td align="center" style="margin: 20px;padding: 20px;" class="w3-navbar">
+																				<a href="$#" target="blank"><img src="images/ukm/menwa.jpg"/><br/><br/>
+																						<strong>Resimen Mahasiswa</strong>
+																				</a>
+																		</td>
+																</tr>
+														</tbody>
+												</table>
+												
+												
+												
+										</div>
+                </div>
+            </section>
+
+
+            <div class="social">
+                <div class="row">
+                    <div class="columns">
+                        <p>Layanan</p>
+                        <p>- <a href="layanan_agenda.html" title="Agenda Kegiatan Kampus">Agenda</a></p>
+                        <p>- <a href="layanan_foto.html" title="Layanan Foto Kampus">Foto</a></p>
+                        <p>- <a href="layanan_video.html" title="Layanan Video Kampus">Video</a></p>
+                        <p>- <a href="layanan_radio.html" title="Layanan Radio Streaming">Radio Streaming</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>- <a href="forum.html" title="Forum Komunikasi">Forum</a></p>
+                        <p>- <a href="ukm.html" title="Unit Kegiatan Kampus">UKM</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>Contact Us</p>
+                        <p>Jl Agile University</p>
+                        <p>Telp : 021-9586579</p>
+                        <p>Email : <a href="mailto:agieluniversity@gmail.com">agieluniversity@gmail.com</a></p>
+                        <p><a href="http://www.universityagile.tk">http://www.universityagile.tk</a></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="secondary_header footer">
+                <div class="copyright">UNIVERSITAS AGILE&copy;201<strong>7</strong></div>
+            </footer>
+    </div>
+    <script language="javascript">
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+				function openCity(evt, cityName) {
+					var i, x, tablinks;
+					x = document.getElementsByClassName("city");
+					for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablink");
+					for (i = 0; i < x.length; i++) {
+							tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+					}
+					document.getElementById(cityName).style.display = "block";
+					evt.currentTarget.className += " w3-red";
+				}
+				
+    </script>
+</body>
+
+</html>
