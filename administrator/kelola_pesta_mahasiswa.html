@@ -5,6 +5,13 @@
 <link href="../css/nav.css" rel="stylesheet" type="text/css">
 <link href="../css/slide.css" rel="stylesheet" type="text/css">
 </head> 
+<script language="JavaScript">
+   function konfirmasi(id)
+   {       
+       tanya = confirm('Anda yakin ingin menghapus data ini ?');
+       if (tanya == true) return ;       
+   }
+</script>
 <body>
 <div class="container">
   <header>    
@@ -41,9 +48,58 @@
     <h2 class="noDisplay">Main Content</h2>
     <div class="secondary_content">
 	<h3>Kelola Pesta Mahasiswa</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
+      <p><button onclick="window.location.href='tambah_pesta.html'" class="w3-button w3-teal">Tambah Pesta</button>      	
+      </p>
+      <table class="nice-table" width="100%">
+      <thead
+      	<tr>
+      		<th>Nama Pesta Kegiatan</th>
+      		<th>Lokasi</th>
+      		<th>Tanggal</th>
+      		<th>Waktu</th>
+			<th>Jumlah Peserta</th>
+      		<th>Proses</th>
+      	</tr>
+		</thead>
+     	<tbody>
+      	<tr>
+      		<td>Pesta Alumni Angkatan 5</td>
+      		<td>Kafe Abrakadabra</td>
+      		<td>25 Juni 2017</td>
+      		<td>19:00 wib - selesai</td>
+			<td align="center"><button onclick="window.location.href='undang_mahasiswa.html'" class="w3-button w3-teal">25</button></td>
+      		<td align="center"><a href="tambah_pesta.html"> View </a> | <a href="tambah_pesta.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+      	</tr>
+      	<tr>
+      		<td>Pesta Kostum Hallowen</td>
+      		<td>Taman Safari Night</td>
+      		<td>14 Mei 2017</td>
+      		<td>19:00 wib - 23:00 wib</td>
+			<td align="center"><button onclick="window.location.href='undang_mahasiswa.html'" class="w3-button w3-teal">25</button></td>
+      		<td align="center"><a href="tambah_pesta.html"> View </a> | <a href="tambah_pesta.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+      	</tr>
+      	<tr>
+      		<td>Pesta Kostum Sumpah Pemuda</td>
+      		<td>Museum Sumpah Pemuda</td>
+      		<td>25 Oktober 2017</td>
+      		<td>10:00 wib - 15:00 wib</td>
+			<td align="center"><button onclick="window.location.href='undang_mahasiswa.html'" class="w3-button w3-teal">25</button></td>
+      		<td align="center"><a href="tambah_pesta.html"> View </a> | <a href="tambah_pesta.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+      	</tr>
+      	<tr>
+      		<td>Pesta Hari Kartini</td>
+      		<td>Balai Kota</td>
+      		<td>21 April 2017</td>
+      		<td>10:00 wib - 15:00 wib</td>
+			<td align="center"><button onclick="window.location.href='undang_mahasiswa.html'" class="w3-button w3-teal">25</button></td>
+      		<td align="center"><a href="tambah_pesta.html"> View </a> | <a href="tambah_pesta.html"> Edit </a> | <a href="javascript:konfirmasi(1)"> Delete </a></td>
+      	</tr>      	
+      	<tr align="right">
+      		<th colspan="6">Page 1 of 25 |< < > >|</th>      		
+      	</tr>
+		</tbody>
+      </table> 
+       </div>
   </section>
   
   <div class="social">
