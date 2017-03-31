@@ -1,0 +1,311 @@
+<html>
+
+<head>
+    <title>UNIVERSITAS AGILE</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <link href="css/slide.css" rel="stylesheet" type="text/css">
+    <link href="css/tab.css" rel="stylesheet" type="text/css">
+</head>
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Login</h2>
+        <form action="administrator/index.html">
+            <label for="fname">Username</label>
+            <input type="text" placeholder="Your username..">
+            <label for="lname">Password</label>
+            <input type="text" placeholder="Your password..">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<div id="openPesta" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">x</a>
+        <h2>Ikut Pesta</h2>
+        <form action="#">
+            <label for="fname">Email</label>
+            <input type="text" placeholder="email anda..">
+            <label for="lname">NPM</label>
+            <input type="text" placeholder="NPM..">
+						<p>
+								Panitia akan menghubungi dan mendaftarkan ada dalam pesta, pemberitahuan selanjutnya akan disampaikan melalui email diatas.
+						</p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<div id="openTeman" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">x</a>
+        <h2>Beritahu Teman</h2>
+        <form action="#">
+            <label for="lname">Email Teman anda</label>
+            <input type="text" placeholder="Email..">
+						<p>
+								Email pemberitahuan pesta akan disampaikan kepada teman anda.
+						</p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+
+
+
+<body>
+<div class="container">
+  <header>    
+    <nav id="primary_nav_wrap">
+    <table width=100%>
+    	<tr>
+    		<td align="left">
+    			<ul>
+				  <li><a href="index.html" title="Halaman Utama">Serambi</a></li>
+				  <li><a href="about.html" title="Selayang Pandang">Tentang Agile</a></li>
+				  <li><a href="#">Akademik</a>
+					<ul>
+					  <li><a href="jadwal.html" title="Halaman Jadwal Kuliah">Jadwal</a></li>
+					  <li><a href="matkul.html" title="Halaman Mata Kuliah">Mata Kuliah</a></li>
+					  <li><a href="registrasi_mahasiswa.html" title="Registrasi Mata Kuliah">Registrasi</a></li>
+					</ul>
+				  </li>
+				  <li><a href="penelitian.html" title="Halaman Penelitian">Penelitian</a></li>
+				<li><a href="#">Civitas</a>
+					<ul>
+						<li><a href="dosen.html" title="Halaman Dosen">Dosen</a></li>
+						<li><a href="staff.html" title="Halaman Staff">Staff</a></li>
+						<li><a href="alumni.html" title="Halaman Alumni">Alumni</a></li>
+					</ul>
+				  </li>				  				  		
+				</ul>
+    		</td>    	
+    		<td align="right">
+    			<a href="index.html" title="Indonesia"><img src="images/indonesia.png" width=20px height=15px></a>
+    			<a href="en/index.html" title="English"><img src="images/english.png" width=20px height=15px></a>
+    			<a href="#openModal" title="Login"><img src="images/logoagile.png" width=20px height=15px></a>   &nbsp;			
+    		</td>    		
+    	</tr>
+    </table>    	
+	</nav>         
+    <div class="w3-display-container" style="width: 100%">
+		  <img class="mySlides" src="images/agileuniversity.png" style="width:100%"> 
+		  <img class="mySlides" src="images/agilebrain.png" style="width:100%"> 
+		  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>	    
+  </header>
+        <section>
+            <h2 class="noDisplay">Main Content</h2>
+            <section>
+                <h2 class="noDisplay">Main Content</h2>
+                <div class="secondary_content">
+										<h3>Pesta Mahasiswa</h3>
+										<p>
+												<strong>Pesta Mahasiswa </strong> merupakan rangkaian acara yang diadakan dari mahasiswa, oleh mahasiswa dan untuk mahasiswa.
+										</p>
+										
+										<div class="w3-container w3-border">
+												<div class="w3-container myParty">
+														<img src="images/pesta/kartini.jpg" style="width:100%;height: 65%; margin-bottom: -116px;" />
+														<div style="float: right;position: relative;top: -317px;right: 6px;">
+																<a href="#openPesta"><button class="w3-bar-item w3-button tablink w3-red">Ikuti Pesta</button></a>
+																<a href="#openTeman"><button class="w3-bar-item w3-button tablink w3-red">Beritahu Teman</button></a>
+														</div>
+														
+														<div style="float: left;left:10px;position: relative;bottom: 16px;color: #f7eeeb;">
+																<strong>Panitia : Kartini, S.Kom </strong><br/>
+																<img style="width:32px;height: 26px;" src="images/pesta/telp.png" /> 021 - 23100534
+																<br/>
+																<img style="width:32px;height: 26px;" src="images/pesta/bbm.png" /> 55345A3
+																<br/>														
+																<div align="left">
+																		<a href="mailto:kartini@agile.com"><img style="width:48px;height: 48px;" src="images/pesta/email.png" /></a>
+																		<a href="https://facebook.com/panitiaKartini"><img style="width:48px;height: 48px;" src="images/pesta/facebook.png" /></a>
+																		<a href="https://instagram.com/panitiaKartini"><img style="width:48px;height: 48px;" src="images/pesta/instagram.png" /></a>
+																		<a href="https://twitter.com/panitiaKartini"><img style="width:48px;height: 48px;" src="images/pesta/twitter.png" /></a>
+																</div>
+														</div>												
+												</div>
+												
+												<div class="w3-container myParty" style="display: none;">
+														<img src="images/pesta/hallowen.jpg" style="width:100%;height: 65%; margin-bottom: -116px;" />
+														<div style="float: right;position: relative;top: -317px;right: 6px;">
+																<a href="#openPesta"><button class="w3-bar-item w3-button tablink w3-red">Ikuti Pesta</button></a>
+																<a href="#openTeman"><button class="w3-bar-item w3-button tablink w3-red">Beritahu Teman</button></a>
+														</div>
+														
+														<div style="float: left;left:10px;position: relative;bottom: 16px;color: #f7eeeb;">
+																<strong>Panitia : Johan, S.Kom </strong><br/>
+																<img style="width:32px;height: 26px;" src="images/pesta/telp.png" /> 021 - 23100534
+																<br/>
+																<img style="width:32px;height: 26px;" src="images/pesta/bbm.png" /> 55345A3
+																<br/>														
+																<div align="left">
+																		<a href="mailto:panitia@agile.com"><img style="width:48px;height: 48px;" src="images/pesta/email.png" /></a>
+																		<a href="https://facebook.com/panitia"><img style="width:48px;height: 48px;" src="images/pesta/facebook.png" /></a>
+																		<a href="https://instagram.com/panitia"><img style="width:48px;height: 48px;" src="images/pesta/instagram.png" /></a>
+																		<a href="https://twitter.com/panitia"><img style="width:48px;height: 48px;" src="images/pesta/twitter.png" /></a>
+																</div>
+														</div>												
+												</div>
+												<div class="w3-container myParty" style="display: none;">
+														<img src="images/pesta/alumni.jpg" style="width:100%;height: 65%; margin-bottom: -116px;" />
+														<div style="float: right;position: relative;top: -317px;right: 6px;">
+																<a href="#openPesta"><button class="w3-bar-item w3-button tablink w3-red">Ikuti Pesta</button></a>
+																<a href="#openTeman"><button class="w3-bar-item w3-button tablink w3-red">Beritahu Teman</button></a>
+														</div>
+														
+														<div style="float: left;left:10px;position: relative;bottom: 16px;color: #f7eeeb;">
+																<strong>Panitia : Wahyu, S.Kom </strong><br/>
+																<img style="width:32px;height: 26px;" src="images/pesta/telp.png" /> 021 - 23100534
+																<br/>
+																<img style="width:32px;height: 26px;" src="images/pesta/bbm.png" /> 55345A3
+																<br/>														
+																<div align="left">
+																		<a href="mailto:panitia@agile.com"><img style="width:48px;height: 48px;" src="images/pesta/email.png" /></a>
+																		<a href="https://facebook.com/panitia"><img style="width:48px;height: 48px;" src="images/pesta/facebook.png" /></a>
+																		<a href="https://instagram.com/panitia"><img style="width:48px;height: 48px;" src="images/pesta/instagram.png" /></a>
+																		<a href="https://twitter.com/panitia"><img style="width:48px;height: 48px;" src="images/pesta/twitter.png" /></a>
+																</div>
+														</div>												
+												</div>
+												<div class="w3-container myParty" style="display: none;">
+														<img src="images/pesta/sumpahpemuda.jpg" style="width:100%;height: 65%; margin-bottom: -116px;" />
+														<div style="float: right;position: relative;top: -317px;right: 6px;">
+																<a href="#openPesta"><button class="w3-bar-item w3-button tablink w3-red">Ikuti Pesta</button></a>
+																<a href="#openTeman"><button class="w3-bar-item w3-button tablink w3-red">Beritahu Teman</button></a>
+														</div>
+														
+														<div style="float: left;left:10px;position: relative;bottom: 16px;color: #f7eeeb;">
+																<strong>Panitia : Burhan, S.Kom </strong><br/>
+																<img style="width:32px;height: 26px;" src="images/pesta/telp.png" /> 021 - 23100534
+																<br/>
+																<img style="width:32px;height: 26px;" src="images/pesta/bbm.png" /> 55345A3
+																<br/>														
+																<div align="left">
+																		<a href="mailto:panitia@agile.com"><img style="width:48px;height: 48px;" src="images/pesta/email.png" /></a>
+																		<a href="https://facebook.com/panitia"><img style="width:48px;height: 48px;" src="images/pesta/facebook.png" /></a>
+																		<a href="https://instagram.com/panitia"><img style="width:48px;height: 48px;" src="images/pesta/instagram.png" /></a>
+																		<a href="https://twitter.com/panitia"><img style="width:48px;height: 48px;" src="images/pesta/twitter.png" /></a>
+																</div>
+														</div>												
+												</div>
+												
+												<button class="w3-button w3-display-left" onclick="tambahDivs(-1)">&#10094;</button>
+												<button class="w3-button w3-display-right" onclick="tambahDivs(1)">&#10095;</button>
+										</div>
+                </div>
+            </section>
+
+
+            <div class="social">
+                <div class="row">
+                    <div class="columns">
+                        <p>Layanan</p>
+                        <p>- <a href="layanan_agenda.html" title="Agenda Kegiatan Kampus">Agenda</a></p>
+                        <p>- <a href="layanan_foto.html" title="Layanan Foto Kampus">Foto</a></p>
+                        <p>- <a href="layanan_video.html" title="Layanan Video Kampus">Video</a></p>
+                        <p>- <a href="layanan_radio.html" title="Layanan Radio Streaming">Radio Streaming</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>- <a href="forum.html" title="Forum Komunikasi">Forum</a></p>
+                        <p>- <a href="ukm.html" title="Unit Kegiatan Kampus">UKM</a></p>
+												<p>- <a href="pesta.html" title="Pesta Mahasiswa">Pesta Mahasiswa</a></p>
+                    </div>
+                    <div class="columns">
+                        <p>Contact Us</p>
+                        <p>Jl Agile University</p>
+                        <p>Telp : 021-9586579</p>
+                        <p>Email : <a href="mailto:agieluniversity@gmail.com">agieluniversity@gmail.com</a></p>
+                        <p><a href="http://www.universityagile.tk">http://www.universityagile.tk</a></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="secondary_header footer">
+                <div class="copyright">UNIVERSITAS AGILE&copy;201<strong>7</strong></div>
+            </footer>
+    </div>
+    <script language="javascript">
+        var slideIndex = 1;
+				var slidexIndex = 1;
+        showDivs(slideIndex);
+				showxDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function tambahDivs(n) {
+            showxDivs(slidexIndex += n);
+        }				
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+        
+        function showxDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("myParty");
+            if (n > x.length) {
+                slidexIndex = 1
+            }
+            if (n < 1) {
+                slidexIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slidexIndex - 1].style.display = "block";
+        }
+				
+				
+				
+				
+				var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+				function openCity(evt, cityName) {
+					var i, x, tablinks;
+					x = document.getElementsByClassName("city");
+					for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablink");
+					for (i = 0; i < x.length; i++) {
+							tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+					}
+					document.getElementById(cityName).style.display = "block";
+					evt.currentTarget.className += " w3-red";
+				}
+				
+    </script>
+</body>
+
+</html>
